@@ -6,6 +6,12 @@ gem 'rails', '3.1.0'
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
+gem 'will_paginate'
+gem 'nested_form', '0.1.1'
+
+group :development, :test do
+	gem 'nifty-generators'
+end
 
 
 # Gems used only for assets and not required
@@ -31,3 +37,5 @@ group :test do
   # Pretty printed test output
   gem 'turn', :require => false
 end
+gem "mocha", :group => :test
+gem "bcrypt-ruby", :require => "bcrypt"

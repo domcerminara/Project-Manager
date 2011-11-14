@@ -1,0 +1,33 @@
+<% title "Projects" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Team Size</th>
+    <th>Creator</th>
+    <th>Start Date</th>
+    <th>End Date</th>
+    <th>Hours Per Week</th>
+    <th>Photo</th>
+    <th>Active</th>
+  </tr>
+  <% for project in @projects %>
+    <tr>
+      <td><%= project.name %></td>
+      <td><%= project.description %></td>
+      <td><%= project.team_size %></td>
+      <td><%= project.creator_id %></td>
+      <td><%= project.start_date %></td>
+      <td><%= project.end_date %></td>
+      <td><%= project.hours_per_week %></td>
+      <td><%= project.photo %></td>
+      <td><%= project.active %></td>
+      <td><%= link_to "Show", project %></td>
+      <td><%= link_to "Edit", edit_project_path(project) %></td>
+      <td><%= link_to "Destroy", project, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Project", new_project_path %></p>

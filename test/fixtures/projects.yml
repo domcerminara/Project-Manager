@@ -1,0 +1,21 @@
+one:
+  name: MyString
+  description: MyText
+  team_size: 1
+  creator_id: 1
+  start_date: 2011-11-14
+  end_date: 2011-11-14
+  hours_per_week: 1
+  photo: MyString
+  active: 
+
+two:
+  name: MyString
+  description: MyText
+  team_size: 1
+  creator_id: 1
+  start_date: 2011-11-14
+  end_date: 2011-11-14
+  hours_per_week: 1
+  photo: MyString
+  active: 

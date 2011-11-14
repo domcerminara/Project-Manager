@@ -1,0 +1,21 @@
+<% title "Skills" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Level</th>
+    <th>Description</th>
+  </tr>
+  <% for skill in @skills %>
+    <tr>
+      <td><%= skill.name %></td>
+      <td><%= skill.level %></td>
+      <td><%= skill.description %></td>
+      <td><%= link_to "Show", skill %></td>
+      <td><%= link_to "Edit", edit_skill_path(skill) %></td>
+      <td><%= link_to "Destroy", skill, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Skill", new_skill_path %></p>

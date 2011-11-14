@@ -1,0 +1,44 @@
+<% title "Project" %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @project.name %>
+</p>
+<p>
+  <strong>Description:</strong>
+  <%= @project.description %>
+</p>
+<p>
+  <strong>Team Size:</strong>
+  <%= @project.team_size %>
+</p>
+<p>
+  <strong>Creator:</strong>
+  <%= @project.creator_id %>
+</p>
+<p>
+  <strong>Start Date:</strong>
+  <%= @project.start_date %>
+</p>
+<p>
+  <strong>End Date:</strong>
+  <%= @project.end_date %>
+</p>
+<p>
+  <strong>Hours Per Week:</strong>
+  <%= @project.hours_per_week %>
+</p>
+<p>
+  <strong>Photo:</strong>
+  <%= @project.photo %>
+</p>
+<p>
+  <strong>Active:</strong>
+  <%= @project.active %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_project_path(@project) %> |
+  <%= link_to "Destroy", @project, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", projects_path %>
+</p>

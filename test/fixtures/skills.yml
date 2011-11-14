@@ -1,0 +1,9 @@
+one:
+  name: MyString
+  level: 1
+  description: MyText
+
+two:
+  name: MyString
+  level: 1
+  description: MyText

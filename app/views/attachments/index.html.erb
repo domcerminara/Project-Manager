@@ -1,0 +1,19 @@
+<% title "Attachments" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Project</th>
+  </tr>
+  <% for attachment in @attachments %>
+    <tr>
+      <td><%= attachment.name %></td>
+      <td><%= attachment.project_id %></td>
+      <td><%= link_to "Show", attachment %></td>
+      <td><%= link_to "Edit", edit_attachment_path(attachment) %></td>
+      <td><%= link_to "Destroy", attachment, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Attachment", new_attachment_path %></p>
