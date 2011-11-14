@@ -8,6 +8,7 @@ gem 'rails', '3.1.0'
 gem 'sqlite3'
 gem 'will_paginate'
 gem 'nested_form', '0.1.1'
+gem 'validates_timeliness'
 
 group :development, :test do
 	gem 'nifty-generators'

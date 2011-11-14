@@ -13,6 +13,8 @@ class ProjectsController < ApplicationController
 
   def create
     @project = Project.new(params[:project])
+    
+    #@project.creator_id = current_user.id
     if @project.save
       redirect_to @project, :notice => "Successfully created project."
     else

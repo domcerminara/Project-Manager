@@ -16,6 +16,16 @@ Team04::Application.routes.draw do
   resources :attachments
 
   resources :projects
+  
+  
+  #-----------
+  #Site root and paths
+  #-----------
+  
+  # index root. home page for logged in users
+  root :to => 'projects#index'
+  
+  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

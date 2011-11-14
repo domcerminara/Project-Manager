@@ -36,3 +36,498 @@ Migrating to CreateUsers (20111114200146)
   [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("user_projects")[0m
   [1m[35m (0.0ms)[0m  PRAGMA index_list("user_skills")
   [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
+
+
+Started GET "/projects/7" for 127.0.0.1 at 2011-11-14 15:47:23 -0500
+
+ActionController::RoutingError (undefined method `validates_timeliness_of' for #<Class:0x4fb7f38>):
+  app/models/project.rb:16:in `<class:Project>'
+  app/models/project.rb:1:in `<top (required)>'
+  app/controllers/projects_controller.rb:1:in `<top (required)>'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (105.0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2011-11-14 15:47:27 -0500
+
+ActionController::RoutingError (undefined method `validates_timeliness_of' for #<Class:0x4f9ffc8>):
+  app/models/project.rb:16:in `<class:Project>'
+  app/models/project.rb:1:in `<top (required)>'
+  app/controllers/projects_controller.rb:1:in `<top (required)>'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2011-11-14 15:47:27 -0500
+
+ActionController::RoutingError (undefined method `validates_timeliness_of' for #<Class:0x515c268>):
+  app/models/project.rb:16:in `<class:Project>'
+  app/models/project.rb:1:in `<top (required)>'
+  app/controllers/projects_controller.rb:1:in `<top (required)>'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2011-11-14 15:53:48 -0500
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (1.0ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+Rendered projects/index.html.erb within layouts/application (227.0ms)
+Completed 500 Internal Server Error in 434ms
+
+ActionView::Template::Error (undefined method `title' for #<#<Class:0x4db6470>:0x4db3ad0>):
+    1: <% title "Projects" %>
+    2: 
+    3: <table>
+    4:   <tr>
+  app/views/projects/index.html.erb:1:in `_app_views_projects_index_html_erb__307634059_40473060'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (24.0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2011-11-14 15:53:59 -0500
+Served asset /rails.png - 200 OK (222ms)
+
+
+Started GET "/projects/7" for 127.0.0.1 at 2011-11-14 15:54:03 -0500
+  Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mProject Load (0.0ms)[0m  SELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", "7"]]
+Completed 404 Not Found in 5ms
+
+ActiveRecord::RecordNotFound (Couldn't find Project with id=7):
+  app/controllers/projects_controller.rb:7:in `show'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2011-11-14 15:54:06 -0500
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.0ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+Rendered projects/index.html.erb within layouts/application (112.0ms)
+Completed 500 Internal Server Error in 129ms
+
+ActionView::Template::Error (undefined method `title' for #<#<Class:0x48a4bb0>:0x48a1b98>):
+    1: <% title "Projects" %>
+    2: 
+    3: <table>
+    4:   <tr>
+  app/views/projects/index.html.erb:1:in `_app_views_projects_index_html_erb__307634059_40473060'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2011-11-14 15:54:06 -0500
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.0ms)[0m  SELECT "projects".* FROM "projects" 
+Rendered projects/index.html.erb within layouts/application (83.0ms)
+Completed 500 Internal Server Error in 98ms
+
+ActionView::Template::Error (undefined method `title' for #<#<Class:0x4da9b40>:0x4d99d78>):
+    1: <% title "Projects" %>
+    2: 
+    3: <table>
+    4:   <tr>
+  app/views/projects/index.html.erb:1:in `_app_views_projects_index_html_erb__307634059_40473060'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2011-11-14 15:55:14 -0500
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.0ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+Rendered projects/index.html.erb within layouts/application (2.0ms)
+Compiled application.css  (3ms)  (pid 360)
+Compiled application.js  (10ms)  (pid 360)
+Compiled jquery.js  (19ms)  (pid 360)
+Compiled jquery_ujs.js  (0ms)  (pid 360)
+Completed 200 OK in 217ms (Views: 215.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-14 15:55:14 -0500
+Served asset /jquery.js - 200 OK (26ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-14 15:55:14 -0500
+Served asset /application.css - 200 OK (19ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-14 15:55:15 -0500
+Served asset /jquery_ujs.js - 200 OK (49ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-14 15:55:15 -0500
+Served asset /application.js - 200 OK (83ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2011-11-14 15:58:32 -0500
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (1.0ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+Rendered projects/index.html.erb within layouts/application (41.0ms)
+Completed 200 OK in 194ms (Views: 192.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-14 15:58:36 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-11-14 15:58:36 -0500
+Served asset /defaults.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2011-11-14 16:03:41 -0500
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.0ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+Rendered projects/index.html.erb within layouts/application (40.0ms)
+Completed 200 OK in 194ms (Views: 192.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-14 16:03:44 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-11-14 16:03:44 -0500
+Served asset /defaults.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2011-11-14 16:03:46 -0500
+  Processing by ProjectsController#new as HTML
+Rendered projects/_form.html.erb (45.0ms)
+Rendered projects/new.html.erb within layouts/application (136.0ms)
+Completed 200 OK in 159ms (Views: 158.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-11-14 16:03:46 -0500
+Served asset /defaults.js - 404 Not Found (36ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-14 16:03:47 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started POST "/projects" for 127.0.0.1 at 2011-11-14 16:04:43 -0500
+  Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tjdLCwD/sMtzZnwWte0NVr3OaFVqo1AwFoBHPITnc0g=", "project"=>{"name"=>"", "description"=>"", "team_size"=>"0", "creator_id"=>"", "start_date(1i)"=>"2011", "start_date(2i)"=>"11", "start_date(3i)"=>"14", "end_date(1i)"=>"2011", "end_date(2i)"=>"11", "end_date(3i)"=>"14", "hours_per_week"=>"", "photo"=>"", "active"=>"true"}, "commit"=>"Create Project"}
+Completed 500 Internal Server Error in 13ms
+
+RuntimeError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id):
+  app/controllers/projects_controller.rb:17:in `create'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.0ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2011-11-14 16:05:55 -0500
+  Processing by ProjectsController#new as HTML
+Rendered projects/_form.html.erb (30.0ms)
+Rendered projects/new.html.erb within layouts/application (34.0ms)
+Completed 200 OK in 57ms (Views: 55.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-14 16:05:55 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-11-14 16:05:55 -0500
+Served asset /defaults.js - 404 Not Found (5ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started POST "/projects" for 127.0.0.1 at 2011-11-14 16:05:57 -0500
+  Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tjdLCwD/sMtzZnwWte0NVr3OaFVqo1AwFoBHPITnc0g=", "project"=>{"name"=>"", "description"=>"", "team_size"=>"", "creator_id"=>"", "start_date(1i)"=>"2011", "start_date(2i)"=>"11", "start_date(3i)"=>"14", "end_date(1i)"=>"2011", "end_date(2i)"=>"11", "end_date(3i)"=>"14", "hours_per_week"=>"", "photo"=>"", "active"=>"true"}, "commit"=>"Create Project"}
+Rendered projects/_form.html.erb (14.0ms)
+Rendered projects/new.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 67ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-14 16:05:57 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-11-14 16:05:57 -0500
+Served asset /defaults.js - 404 Not Found (17ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started POST "/projects" for 127.0.0.1 at 2011-11-14 16:06:10 -0500
+  Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tjdLCwD/sMtzZnwWte0NVr3OaFVqo1AwFoBHPITnc0g=", "project"=>{"name"=>"", "description"=>"", "team_size"=>"", "creator_id"=>"", "start_date(1i)"=>"2011", "start_date(2i)"=>"11", "start_date(3i)"=>"14", "end_date(1i)"=>"2011", "end_date(2i)"=>"11", "end_date(3i)"=>"13", "hours_per_week"=>"", "photo"=>"", "active"=>"true"}, "commit"=>"Create Project"}
+Rendered projects/_form.html.erb (14.0ms)
+Rendered projects/new.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 120ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-14 16:06:10 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-11-14 16:06:10 -0500
+Served asset /defaults.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started POST "/projects" for 127.0.0.1 at 2011-11-14 16:06:42 -0500
+  Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tjdLCwD/sMtzZnwWte0NVr3OaFVqo1AwFoBHPITnc0g=", "project"=>{"name"=>"", "description"=>"", "team_size"=>"", "creator_id"=>"", "start_date(1i)"=>"2011", "start_date(2i)"=>"11", "start_date(3i)"=>"14", "end_date(1i)"=>"2011", "end_date(2i)"=>"11", "end_date(3i)"=>"13", "hours_per_week"=>"", "photo"=>"", "active"=>"true"}, "commit"=>"Create Project"}
+Rendered projects/_form.html.erb (13.0ms)
+Rendered projects/new.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 52ms (Views: 34.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-14 16:06:42 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-11-14 16:06:42 -0500
+Served asset /defaults.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started POST "/projects" for 127.0.0.1 at 2011-11-14 16:11:13 -0500
+  Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tjdLCwD/sMtzZnwWte0NVr3OaFVqo1AwFoBHPITnc0g=", "project"=>{"name"=>"First Project", "description"=>"kdk", "team_size"=>"1", "creator_id"=>"1", "start_date(1i)"=>"2011", "start_date(2i)"=>"11", "start_date(3i)"=>"14", "end_date(1i)"=>"2011", "end_date(2i)"=>"11", "end_date(3i)"=>"14", "hours_per_week"=>"1", "photo"=>"lalala", "active"=>"true"}, "commit"=>"Create Project"}
+  [1m[35mSQL (115.0ms)[0m  INSERT INTO "projects" ("active", "created_at", "creator_id", "description", "end_date", "hours_per_week", "name", "photo", "start_date", "team_size", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["active", true], ["created_at", Mon, 14 Nov 2011 21:11:13 UTC +00:00], ["creator_id", 1], ["description", "kdk"], ["end_date", Mon, 14 Nov 2011], ["hours_per_week", 1], ["name", "First Project"], ["photo", "lalala"], ["start_date", Mon, 14 Nov 2011], ["team_size", 1], ["updated_at", Mon, 14 Nov 2011 21:11:13 UTC +00:00]]
+Redirected to http://localhost:3000/projects/1
+Completed 302 Found in 305ms
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2011-11-14 16:11:13 -0500
+  Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.0ms)[0m  [1mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Rendered projects/show.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 37ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-11-14 16:11:13 -0500
+Served asset /defaults.js - 404 Not Found (4ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-14 16:11:13 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2011-11-14 16:11:22 -0500
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (1.0ms)[0m  SELECT "projects".* FROM "projects" 
+Rendered projects/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 39ms (Views: 35.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-11-14 16:11:22 -0500
+Served asset /defaults.js - 404 Not Found (4ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-14 16:11:22 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2011-11-14 16:11:24 -0500
+  Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.0ms)[0m  [1mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Rendered projects/show.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 37ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-11-14 16:11:25 -0500
+Served asset /defaults.js - 404 Not Found (6ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-14 16:11:25 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/projects/1/edit" for 127.0.0.1 at 2011-11-14 16:11:27 -0500
+  Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.0ms)[0m  SELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", "1"]]
+Rendered projects/_form.html.erb (30.0ms)
+Rendered projects/edit.html.erb within layouts/application (35.0ms)
+Completed 200 OK in 62ms (Views: 59.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-11-14 16:11:27 -0500
+Served asset /defaults.js - 404 Not Found (9ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-14 16:11:27 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2011-11-14 16:11:29 -0500
+  Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.0ms)[0m  [1mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Rendered projects/show.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 41ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-14 16:11:30 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-11-14 16:11:30 -0500
+Served asset /defaults.js - 404 Not Found (4ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/p" for 127.0.0.1 at 2011-11-14 18:18:50 -0500
+
+ActionController::RoutingError (No route matches [GET] "/p"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (40.0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2011-11-14 18:18:54 -0500
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.0ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+Rendered projects/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 72ms (Views: 70.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-14 18:18:54 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-11-14 18:18:54 -0500
+Served asset /defaults.js - 404 Not Found (4ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2011-11-14 18:18:55 -0500
+  Processing by ProjectsController#new as HTML
+Rendered projects/_form.html.erb (41.0ms)
+Rendered projects/new.html.erb within layouts/application (102.0ms)
+Completed 200 OK in 160ms (Views: 159.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-14 18:18:56 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-11-14 18:18:56 -0500
+Served asset /defaults.js - 404 Not Found (4ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started POST "/projects" for 127.0.0.1 at 2011-11-14 18:19:15 -0500
+  Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tjdLCwD/sMtzZnwWte0NVr3OaFVqo1AwFoBHPITnc0g=", "project"=>{"name"=>"diud", "description"=>"ddkl", "team_size"=>"1", "creator_id"=>"1", "start_date(1i)"=>"2011", "start_date(2i)"=>"11", "start_date(3i)"=>"14", "end_date(1i)"=>"2011", "end_date(2i)"=>"11", "end_date(3i)"=>"14", "hours_per_week"=>"1", "photo"=>"djdkj", "active"=>"true"}, "commit"=>"Create Project"}
+  [1m[35mSQL (73.0ms)[0m  INSERT INTO "projects" ("active", "created_at", "creator_id", "description", "end_date", "hours_per_week", "name", "photo", "start_date", "team_size", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["active", true], ["created_at", Mon, 14 Nov 2011 23:19:15 UTC +00:00], ["creator_id", 1], ["description", "ddkl"], ["end_date", Mon, 14 Nov 2011], ["hours_per_week", 1], ["name", "diud"], ["photo", "djdkj"], ["start_date", Mon, 14 Nov 2011], ["team_size", 1], ["updated_at", Mon, 14 Nov 2011 23:19:15 UTC +00:00]]
+Redirected to http://localhost:3000/projects/2
+Completed 302 Found in 204ms
+
+
+Started GET "/projects/2" for 127.0.0.1 at 2011-11-14 18:19:15 -0500
+  Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProject Load (0.0ms)[0m  [1mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", "2"]]
+Rendered projects/show.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 39ms (Views: 34.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-14 18:19:16 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-11-14 18:19:16 -0500
+Served asset /defaults.js - 404 Not Found (9ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2011-11-14 18:19:17 -0500
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.0ms)[0m  SELECT "projects".* FROM "projects" 
+Rendered projects/index.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 83ms (Views: 80.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-11-14 18:19:18 -0500
+Served asset /defaults.js - 404 Not Found (5ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-14 18:19:18 -0500
+Served asset /application.css - 304 Not Modified (0ms)

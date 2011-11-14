@@ -11,7 +11,9 @@ class Project < ActiveRecord::Base
   
   # Validations
   # ----------------------------
-  
+  validates_presence_of :name, :description
+  validates_numericality_of :team_size, :hours_per_week
+  validates_date :start_date, :on_or_before => lambda { :end_date }, :on_or_before_message => "must be on or before end date"
 	
   # Constants
   # ----------------------------
@@ -24,6 +26,5 @@ class Project < ActiveRecord::Base
   
   # Other Methods
   # ----------------------------
-  
   
 end
