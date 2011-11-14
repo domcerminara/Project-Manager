@@ -4,4 +4,19 @@ class Attachment < ActiveRecord::Base
   # Relationships
   #---------------------------
   belongs_to :project
+  
+  # Validations
+  # ----------------------------
+	
+  # Constants
+  # ----------------------------
+  
+  # Callbacks
+  # ----------------------------
+  
+  # Scopes
+  # ----------------------------
+  
+  # Other Methods
+  # ----------------------------
 end
