@@ -12,13 +12,16 @@
     <th>Project Creator</th>
     <th>Duration</th>
     <th>Commitment (hrs/week)</th>
+    <th></th>
+    <th></th>
+    <th></th>
   </tr>
   <% for project in @projects %>
     <tr>
       <td><%= project.name %></td>
       <td><%= project.team_size %></td>
       <td><%= project.creator.name %></td>
-      <td><%= project.start_date.strftime("%B %d, %Y") %> - <%= project.end_date.strftime("%B %d, %Y") %></td>
+      <td><%= project.start_date.strftime("%b %d, %Y") %> - <%= project.end_date.strftime("%b %d, %Y") %></td>
       <td><%= project.hours_per_week %></td>
       <td><%= link_to "Show", project %></td>
       <td><%= link_to "Edit", edit_project_path(project) %></td>
