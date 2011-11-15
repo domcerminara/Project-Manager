@@ -26,7 +26,7 @@
   </p>
   <p>
     <%= f.label :team_size, "Number of People" %><br />
-    <%= f.number_field :team_size %>
+    <%= f.number_field :team_size, :min => 1 %>
   </p>
   <p>
     <%= f.label :duration %><br />
@@ -34,7 +34,7 @@
   </p>
   <p>
     <%= f.label :hours_per_week, "Work Commitment (hrs/week)" %><br />
-    <%= f.number_field :hours_per_week %>
+    <%= f.number_field :hours_per_week, :min => 1 %>
   </p>
   <p>
     <%= f.label :photo, "Project Logo" %><br />

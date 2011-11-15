@@ -20,7 +20,8 @@ class Project < ActiveRecord::Base
   # Validations
   # ----------------------------
   validates_presence_of :name, :description
-  validates_numericality_of :team_size, :hours_per_week
+  validates_numericality_of :team_size, :greater_than => 0
+  validates_numericality_of :hours_per_week, :greater_than => 0
   validates_date :start_date, :on_or_before => lambda { :end_date }, :on_or_before_message => "must be on or before end date"
   validates_date :start_date, :on_or_after => lambda { Date.current }, :on_or_after_message => "can't be before today"
 	
