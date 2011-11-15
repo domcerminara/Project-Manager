@@ -531,3 +531,88 @@ Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatc
 
 Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-14 18:19:18 -0500
 Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-15 13:19:24 -0500
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (1.0ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+Rendered projects/index.html.erb within layouts/application (147.0ms)
+Completed 200 OK in 611ms (Views: 606.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 13:19:36 -0500
+Served asset /application.css - 200 OK (3ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-11-15 13:19:36 -0500
+Served asset /defaults.js - 404 Not Found (9ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.0ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2011-11-15 13:19:57 -0500
+  Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.0ms)[0m  SELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", "1"]]
+Rendered projects/show.html.erb within layouts/application (85.0ms)
+Completed 200 OK in 134ms (Views: 127.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-11-15 13:19:58 -0500
+Served asset /defaults.js - 404 Not Found (9ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+  [1m[36m (1.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateProjects (20111114194822)
+Migrating to CreateAttachments (20111114195143)
+Migrating to CreateUserProjects (20111114195303)
+Migrating to CreateUserSkills (20111114195408)
+Migrating to CreateProjectSkills (20111114195940)
+Migrating to CreateSkills (20111114200042)
+Migrating to CreateUsers (20111114200146)
+  [1m[35m (1.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("attachments")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("project_skills")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("projects")
+  [1m[36m (1.0ms)[0m  [1mPRAGMA index_list("skills")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("user_projects")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("user_skills")[0m
+  [1m[35m (1.0ms)[0m  PRAGMA index_list("users")
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-15 13:29:07 -0500
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.0ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+Rendered projects/index.html.erb within layouts/application (40.0ms)
+Completed 200 OK in 100ms (Views: 95.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 13:29:08 -0500
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2011-11-15 13:46:23 -0500
+  Processing by ProjectsController#new as HTML
+Rendered projects/_form.html.erb (193.0ms)
+Rendered projects/new.html.erb within layouts/application (351.0ms)
+Completed 200 OK in 398ms (Views: 396.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 13:46:24 -0500
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-11-15 13:46:24 -0500
+Served asset /defaults.js - 404 Not Found (8ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.0ms)
