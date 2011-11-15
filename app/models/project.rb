@@ -9,6 +9,10 @@ class Project < ActiveRecord::Base
   has_many :skills, :through => :project_skills
   has_many :attachments
   
+  # Nested Attributes
+  # ----------------------------
+  accepts_nested_attributes_for :skills, :reject_if => lambda { |skill| skill[:name].blank? }
+  
   # Validations
   # ----------------------------
   validates_presence_of :name, :description
