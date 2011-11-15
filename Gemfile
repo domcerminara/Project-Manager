@@ -7,6 +7,7 @@ gem 'will_paginate'
 gem 'nested_form', '0.1.1'
 gem 'validates_timeliness'
 gem 'jquery-rails', '1.0.10'
+gem 'carrierwave'
 
 group :development, :test do
 	gem 'nifty-generators'

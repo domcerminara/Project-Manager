@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111115213119) do
+ActiveRecord::Schema.define(:version => 20111115223210) do
 
   create_table "attachments", :force => true do |t|
     t.string   "name"
@@ -36,10 +36,10 @@ ActiveRecord::Schema.define(:version => 20111115213119) do
     t.date     "start_date"
     t.date     "end_date"
     t.integer  "hours_per_week"
-    t.string   "photo"
     t.boolean  "active",         :default => true
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "photo"
   end
 
   create_table "skills", :force => true do |t|
