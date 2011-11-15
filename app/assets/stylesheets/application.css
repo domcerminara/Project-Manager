@@ -1,7 +1,8 @@
 body {
-  background-color: #4B7399;
+  background-color: #CCBF82;
   font-family: Verdana, Helvetica, Arial;
   font-size: 14px;
+  color: #2B2825;
 }
 
 a img {
@@ -9,7 +10,9 @@ a img {
 }
 
 a {
-  color: #0000FF;
+  color: #0B8C8F;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .clear {
@@ -21,25 +24,75 @@ a {
 #container {
   width: 75%;
   margin: 0 auto;
-  background-color: #FFF;
+  background-color: #F7FAE9;
   padding: 20px 40px;
-  border: solid 1px black;
+
   margin-top: 20px;
+
 }
 
+#header{
+
+  min-height: 100px;
+  padding: 20px;
+  border-bottom: 1px solid #2B2825;
+}
+	#header img{
+		width: 400px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+
+.myButton {
+	-moz-box-shadow:inset 0px 1px 16px 1px #e5fa91;
+	-webkit-box-shadow:inset 0px 1px 16px 1px #e5fa91;
+	box-shadow:inset 0px 1px 16px 1px #e5fa91;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #e1e643), color-stop(1, #9ca100) );
+	background:-moz-linear-gradient( center top, #e1e643 5%, #9ca100 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e1e643', endColorstr='#9ca100');
+	background-color:#e1e643;
+	-moz-border-radius:42px;
+	-webkit-border-radius:42px;
+	border-radius:42px;
+	border:1px solid #cacf43;
+	display:inline-block;
+	color:#edfab9;
+	font-family:Arial Black;
+	font-size:19px;
+	font-weight:bold;
+	padding:32px 30px;
+	text-decoration:none;
+}.myButton:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #9ca100), color-stop(1, #e1e643) );
+	background:-moz-linear-gradient( center top, #9ca100 5%, #e1e643 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#9ca100', endColorstr='#e1e643');
+	background-color:#9ca100;
+}.myButton:active {
+	position:relative;
+	top:1px;
+}
+	.myButton a{
+	color:#edfab9;
+	}
+	
+.right{
+  float: right;
+}
 #flash_notice, #flash_error, #flash_alert {
   padding: 5px 8px;
   margin: 10px 0;
 }
 
 #flash_notice {
-  background-color: #CFC;
-  border: solid 1px #6C6;
+  background-color: #CACF43;
+  /*border: solid 1px #6C6;*/
 }
 
 #flash_error, #flash_alert {
-  background-color: #FCC;
-  border: solid 1px #C66;
+  background-color: #D6156C;
+  /*border: solid 1px #C66;*/
 }
 
 .fieldWithErrors {
