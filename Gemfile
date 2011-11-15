@@ -6,6 +6,7 @@ gem 'sqlite3'
 gem 'will_paginate'
 gem 'nested_form', '0.1.1'
 gem 'validates_timeliness'
+gem 'jquery-rails', '1.0.10'
 
 group :development, :test do
 	gem 'nifty-generators'
@@ -34,8 +35,6 @@ group :assets do
 # gem 'coffee-rails', "~> 3.1.0"
 #gem 'uglifier'
 end
-
-
 
 # Use unicorn as the web server
 # gem 'unicorn'
