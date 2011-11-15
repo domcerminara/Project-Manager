@@ -6205,3 +6205,123 @@ Served asset /jquery-ui.js - 304 Not Modified (0ms)
 
 Started GET "/assets/teambuilder_logo.svg" for 127.0.0.1 at 2011-11-15 18:13:07 -0500
 Served asset /teambuilder_logo.svg - 304 Not Modified (0ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateProjects (20111114194822)
+Migrating to CreateAttachments (20111114195143)
+Migrating to CreateUserProjects (20111114195303)
+Migrating to CreateUserSkills (20111114195408)
+Migrating to CreateProjectSkills (20111114195940)
+Migrating to CreateSkills (20111114200042)
+Migrating to CreateUsers (20111114200146)
+Migrating to AddDefaultUser (20111115213119)
+Migrating to RemovePhotoFromProject (20111115222148)
+Migrating to AddPhotoToProjects (20111115223210)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (1.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("attachments")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("project_skills")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("projects")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("skills")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("user_projects")
+  [1m[36m (1.0ms)[0m  [1mPRAGMA index_list("user_skills")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("users")
+
+
+Started GET "/projects" for 127.0.0.1 at 2011-11-15 18:17:59 -0500
+  Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (68.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mProject Load (0.0ms)[0m  SELECT "projects".* FROM "projects" 
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered projects/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 385ms (Views: 281.0ms | ActiveRecord: 71.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-15 18:18:03 -0500
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 18:18:03 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-15 18:18:03 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-15 18:18:03 -0500
+Served asset /jquery-ui.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2011-11-15 18:18:03 -0500
+Served asset /jquery-ui.min.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2011-11-15 18:18:03 -0500
+Served asset /jquery.min.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2011-11-15 18:18:03 -0500
+Served asset /jquery.tokeninput.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/nested_form.js?body=1" for 127.0.0.1 at 2011-11-15 18:18:03 -0500
+Served asset /nested_form.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-15 18:18:03 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teambuilder_logo.svg" for 127.0.0.1 at 2011-11-15 18:18:03 -0500
+Served asset /teambuilder_logo.svg - 304 Not Modified (3ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2011-11-15 18:18:05 -0500
+  Processing by ProjectsController#new as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mSkill Load (0.0ms)[0m  [1mSELECT "skills".* FROM "skills" [0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "skills" INNER JOIN "project_skills" ON "skills"."id" = "project_skills"."skill_id" WHERE "project_skills"."project_id" IS NULL AND "skills"."id" = 3 LIMIT 1
+Rendered projects/_skill_checkboxes.html.erb (452.0ms)
+Rendered projects/_form.html.erb (492.0ms)
+Rendered projects/new.html.erb within layouts/application (542.0ms)
+Completed 200 OK in 631ms (Views: 568.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2011-11-15 18:18:06 -0500
+Served asset /jquery.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-15 18:18:06 -0500
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-15 18:18:06 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2011-11-15 18:18:06 -0500
+Served asset /jquery-ui.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-15 18:18:06 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 18:18:06 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2011-11-15 18:18:06 -0500
+Served asset /jquery.tokeninput.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nested_form.js?body=1" for 127.0.0.1 at 2011-11-15 18:18:06 -0500
+Served asset /nested_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-15 18:18:06 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/teambuilder_logo.svg" for 127.0.0.1 at 2011-11-15 18:18:06 -0500
+Served asset /teambuilder_logo.svg - 304 Not Modified (0ms)
