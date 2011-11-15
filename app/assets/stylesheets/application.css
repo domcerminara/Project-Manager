@@ -69,10 +69,51 @@ a {
 	background:-moz-linear-gradient( center top, #9ca100 5%, #e1e643 100% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#9ca100', endColorstr='#e1e643');
 	background-color:#9ca100;
+
+/* ===== Begin David CSS =============================== */
+
+.skill_checkboxes{
+	float: right;
+}
+
+td{
+	text-align: center;
+}
+
+.active{
+	color: green;
+}
+
+.closed{
+	color: red;
+}
+
+/*.myButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #caefab;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #caefab;
+	box-shadow:inset 0px 1px 0px 0px #caefab;
+	background-color:#77d42a;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #268a16;
+	display:inline-block;
+	color:#306108;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:32px 76px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #aade7c;
+}.myButton:hover {
+	background-color:#5cb811;
 }.myButton:active {
 	position:relative;
 	top:1px;
-}
+}*/
+/* ===== End David CSS ================================= */
+
+
 	.myButton a{
 	color:#edfab9;
 	}
@@ -80,6 +121,7 @@ a {
 .right{
   float: right;
 }
+
 #flash_notice, #flash_error, #flash_alert {
   padding: 5px 8px;
   margin: 10px 0;

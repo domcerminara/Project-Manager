@@ -17,7 +17,7 @@
   
   
   <p>
-    <%= f.label :name %><br />
+    <%= f.label :name, "Project Name" %><br />
     <%= f.text_field :name %>
   </p>
   <p>
@@ -25,23 +25,19 @@
     <%= f.text_area :description, :rows => 4, :cols => 35 %>
   </p>
   <p>
-    <%= f.label :team_size %><br />
+    <%= f.label :team_size, "Number of People" %><br />
     <%= f.number_field :team_size %>
   </p>
   <p>
-    <%= f.label :start_date %><br />
-    <%= f.date_select :start_date %>
+    <%= f.label :duration %><br />
+    <%= f.date_select :start_date, :order => [:month, :day, :year] %> - <%= f.date_select :end_date, :order => [:month, :day, :year] %>
   </p>
   <p>
-    <%= f.label :end_date %><br />
-    <%= f.date_select :end_date %>
-  </p>
-  <p>
-    <%= f.label :hours_per_week %><br />
+    <%= f.label :hours_per_week, "Work Commitment (hrs/week)" %><br />
     <%= f.number_field :hours_per_week %>
   </p>
   <p>
-    <%= f.label :photo %><br />
+    <%= f.label :photo, "Project Logo" %><br />
     <%= f.text_field :photo %>
   </p>
   
