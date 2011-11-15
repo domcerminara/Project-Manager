@@ -3438,12 +3438,21 @@ Served asset /jquery-ui.min.js - 304 Not Modified (0ms)
 
 Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2011-11-15 17:11:30 -0500
 Served asset /jquery.min.js - 304 Not Modified (0ms)
+<<<<<<< HEAD
 
 
 Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2011-11-15 17:11:30 -0500
 Served asset /jquery.tokeninput.js - 304 Not Modified (0ms)
 
 
+=======
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2011-11-15 17:11:30 -0500
+Served asset /jquery.tokeninput.js - 304 Not Modified (0ms)
+
+
+>>>>>>> 7b505182bda34d28e9ae13c304e19ac28c54bc1f
 Started GET "/assets/nested_form.js?body=1" for 127.0.0.1 at 2011-11-15 17:11:30 -0500
 Served asset /nested_form.js - 304 Not Modified (0ms)
 
@@ -3618,12 +3627,21 @@ Served asset /jquery.min.js - 304 Not Modified (0ms)
 
 Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-15 17:14:12 -0500
 Served asset /jquery-ui.js - 304 Not Modified (0ms)
+<<<<<<< HEAD
 
 
 Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 17:14:12 -0500
 Served asset /application.css - 200 OK (0ms)
 
 
+=======
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 17:14:12 -0500
+Served asset /application.css - 200 OK (0ms)
+
+
+>>>>>>> 7b505182bda34d28e9ae13c304e19ac28c54bc1f
 Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2011-11-15 17:14:12 -0500
 Served asset /jquery-ui.min.js - 304 Not Modified (0ms)
 
@@ -3745,6 +3763,7 @@ Served asset /jquery.js - 304 Not Modified (0ms)
 
 Started GET "/assets/teambuilder_logo.svg" for 127.0.0.1 at 2011-11-15 17:15:21 -0500
 Served asset /teambuilder_logo.svg - 304 Not Modified (0ms)
+<<<<<<< HEAD
 
 
 Started GET "/" for 127.0.0.1 at 2011-11-15 17:15:35 -0500
@@ -3754,6 +3773,17 @@ Rendered projects/index.html.erb within layouts/application (40.0ms)
 Completed 200 OK in 249ms (Views: 244.0ms | ActiveRecord: 1.0ms)
 
 
+=======
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-15 17:15:35 -0500
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.0ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+Rendered projects/index.html.erb within layouts/application (40.0ms)
+Completed 200 OK in 249ms (Views: 244.0ms | ActiveRecord: 1.0ms)
+
+
+>>>>>>> 7b505182bda34d28e9ae13c304e19ac28c54bc1f
 Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 17:15:36 -0500
 Served asset /application.css - 304 Not Modified (0ms)
 
@@ -3984,7 +4014,10 @@ Served asset /jquery.tokeninput.js - 304 Not Modified (0ms)
 
 Started GET "/assets/teambuilder_logo.svg" for 127.0.0.1 at 2011-11-15 17:25:46 -0500
 Served asset /teambuilder_logo.svg - 304 Not Modified (1ms)
+<<<<<<< HEAD
+=======
 
+>>>>>>> 7b505182bda34d28e9ae13c304e19ac28c54bc1f
 
 Started GET "/" for 127.0.0.1 at 2011-11-15 17:27:17 -0500
   Processing by ProjectsController#index as HTML
@@ -3993,6 +4026,16 @@ Rendered projects/index.html.erb within layouts/application (45.0ms)
 Compiled application.css  (2ms)  (pid 6024)
 Completed 200 OK in 176ms (Views: 169.0ms | ActiveRecord: 3.0ms)
 
+<<<<<<< HEAD
+Started GET "/" for 127.0.0.1 at 2011-11-15 17:27:17 -0500
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (1.0ms)[0m  SELECT "projects".* FROM "projects" 
+Rendered projects/index.html.erb within layouts/application (45.0ms)
+Compiled application.css  (2ms)  (pid 6024)
+Completed 200 OK in 176ms (Views: 169.0ms | ActiveRecord: 3.0ms)
+
+=======
+>>>>>>> 7b505182bda34d28e9ae13c304e19ac28c54bc1f
 
 Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-15 17:27:18 -0500
 Served asset /jquery_ujs.js - 304 Not Modified (0ms)
@@ -4278,12 +4321,21 @@ Started GET "/" for 127.0.0.1 at 2011-11-15 17:30:52 -0500
 Rendered projects/index.html.erb within layouts/application (42.0ms)
 Compiled application.css  (2ms)  (pid 6024)
 Completed 200 OK in 162ms (Views: 157.0ms | ActiveRecord: 3.0ms)
+<<<<<<< HEAD
 
 
 Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 17:30:53 -0500
 Served asset /application.css - 200 OK (0ms)
 
 
+=======
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 17:30:53 -0500
+Served asset /application.css - 200 OK (0ms)
+
+
+>>>>>>> 7b505182bda34d28e9ae13c304e19ac28c54bc1f
 Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-15 17:30:54 -0500
 Served asset /jquery_ujs.js - 304 Not Modified (0ms)
 
@@ -4351,12 +4403,21 @@ Started GET "/" for 127.0.0.1 at 2011-11-15 17:32:01 -0500
   [1m[36mProject Load (1.0ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
 Rendered projects/index.html.erb within layouts/application (45.0ms)
 Completed 200 OK in 124ms (Views: 119.0ms | ActiveRecord: 3.0ms)
+<<<<<<< HEAD
 
 
 Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 17:32:01 -0500
 Served asset /application.css - 304 Not Modified (1ms)
 
 
+=======
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 17:32:01 -0500
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+>>>>>>> 7b505182bda34d28e9ae13c304e19ac28c54bc1f
 Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-15 17:32:01 -0500
 Served asset /jquery.js - 304 Not Modified (0ms)
 
@@ -4379,6 +4440,7 @@ Served asset /jquery.min.js - 304 Not Modified (0ms)
 
 Started GET "/assets/nested_form.js?body=1" for 127.0.0.1 at 2011-11-15 17:32:01 -0500
 Served asset /nested_form.js - 304 Not Modified (0ms)
+<<<<<<< HEAD
 
 
 Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2011-11-15 17:32:02 -0500
@@ -4448,6 +4510,77 @@ Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2011-11-15 17:37:
 Served asset /jquery-ui.min.js - 304 Not Modified (0ms)
 
 
+=======
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2011-11-15 17:32:02 -0500
+Served asset /jquery.tokeninput.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-15 17:32:02 -0500
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/teambuilder_logo.svg" for 127.0.0.1 at 2011-11-15 17:32:03 -0500
+Served asset /teambuilder_logo.svg - 304 Not Modified (0ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2011-11-15 17:32:12 -0500
+  Processing by ProjectsController#new as HTML
+Rendered projects/_skill_checkboxes.html.erb (8.0ms)
+Rendered projects/_form.html.erb (50.0ms)
+Rendered projects/new.html.erb within layouts/application (59.0ms)
+Completed 500 Internal Server Error in 93ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+    1: <div id='skill_checkboxes'>
+    2: 	<h3>Necessary Skills</h3>
+    3: 	  <% for skill in @skills  %>
+    4: 	   <%= check_box_tag "project[skill_ids][]", skill.id, @project.skills.include?(skill) %>
+    5: 		 <%= skill.name %>
+    6: 	   <br />
+  app/views/projects/_skill_checkboxes.html.erb:3:in `_app_views_projects__skill_checkboxes_html_erb__840701583_29380200'
+  app/views/projects/_form.html.erb:6:in `block in _app_views_projects__form_html_erb___16610570_35472372'
+  app/views/projects/_form.html.erb:1:in `_app_views_projects__form_html_erb___16610570_35472372'
+  app/views/projects/new.html.erb:3:in `_app_views_projects_new_html_erb___220891805_36436644'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (25.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-15 17:37:54 -0500
+  Processing by ProjectsController#index as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 2ms
+
+
+Started GET "/login" for 127.0.0.1 at 2011-11-15 17:37:54 -0500
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (6.0ms)
+Compiled application.css  (1ms)  (pid 6024)
+Completed 200 OK in 125ms (Views: 124.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 17:37:55 -0500
+Served asset /application.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-15 17:37:55 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-15 17:37:55 -0500
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2011-11-15 17:37:55 -0500
+Served asset /jquery-ui.min.js - 304 Not Modified (0ms)
+
+
+>>>>>>> 7b505182bda34d28e9ae13c304e19ac28c54bc1f
 Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2011-11-15 17:37:55 -0500
 Served asset /jquery.min.js - 304 Not Modified (0ms)
 
@@ -4588,12 +4721,21 @@ Served asset /jquery-ui.min.js - 304 Not Modified (0ms)
 
 Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-15 17:38:16 -0500
 Served asset /jquery.js - 304 Not Modified (0ms)
+<<<<<<< HEAD
 
 
 Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2011-11-15 17:38:16 -0500
 Served asset /jquery.tokeninput.js - 304 Not Modified (0ms)
 
 
+=======
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2011-11-15 17:38:16 -0500
+Served asset /jquery.tokeninput.js - 304 Not Modified (0ms)
+
+
+>>>>>>> 7b505182bda34d28e9ae13c304e19ac28c54bc1f
 Started GET "/assets/nested_form.js?body=1" for 127.0.0.1 at 2011-11-15 17:38:16 -0500
 Served asset /nested_form.js - 304 Not Modified (0ms)
 
@@ -4605,6 +4747,7 @@ Served asset /application.css - 304 Not Modified (0ms)
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-15 17:38:16 -0500
 Served asset /application.js - 304 Not Modified (3ms)
 
+<<<<<<< HEAD
 
 Started GET "/assets/teambuilder_logo.svg" for 127.0.0.1 at 2011-11-15 17:38:16 -0500
 Served asset /teambuilder_logo.svg - 304 Not Modified (0ms)
@@ -4629,8 +4772,37 @@ Started GET "/" for 127.0.0.1 at 2011-11-15 17:38:27 -0500
   [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
 Rendered projects/index.html.erb within layouts/application (143.0ms)
 Completed 200 OK in 306ms (Views: 217.0ms | ActiveRecord: 4.0ms)
+=======
+>>>>>>> 7b505182bda34d28e9ae13c304e19ac28c54bc1f
+
+Started GET "/assets/teambuilder_logo.svg" for 127.0.0.1 at 2011-11-15 17:38:16 -0500
+Served asset /teambuilder_logo.svg - 304 Not Modified (0ms)
+
+<<<<<<< HEAD
+=======
+
+Started POST "/users" for 127.0.0.1 at 2011-11-15 17:38:25 -0500
+  Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"89+l5aiJ+ME5qorLjQROad7oDzvN1QMeajMZIDmrPE0=", "user"=>{"username"=>"hannah", "email"=>"h@h.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "users" WHERE "users"."username" = 'hannah' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "users" WHERE "users"."email" = 'h@h.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `password_hash`
+Binary data inserted for `string` type on column `password_salt`
+  [1m[35mSQL (55.0ms)[0m  INSERT INTO "users" ("created_at", "email", "first_name", "last_name", "password_hash", "password_salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Tue, 15 Nov 2011 22:38:27 UTC +00:00], ["email", "h@h.com"], ["first_name", nil], ["last_name", nil], ["password_hash", "$2a$10$ACpBVPaPjeMcizJ2VbDK9eq3TwA4oTEG/mmcfc5QSWI8i3rxh5rTW"], ["password_salt", "$2a$10$ACpBVPaPjeMcizJ2VbDK9e"], ["updated_at", Tue, 15 Nov 2011 22:38:27 UTC +00:00], ["username", "hannah"]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 1597ms
 
 
+Started GET "/" for 127.0.0.1 at 2011-11-15 17:38:27 -0500
+  Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mProject Load (1.0ms)[0m  SELECT "projects".* FROM "projects" 
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered projects/index.html.erb within layouts/application (143.0ms)
+Completed 200 OK in 306ms (Views: 217.0ms | ActiveRecord: 4.0ms)
+
+
+>>>>>>> 7b505182bda34d28e9ae13c304e19ac28c54bc1f
 Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2011-11-15 17:38:28 -0500
 Served asset /jquery-ui.min.js - 304 Not Modified (0ms)
 
@@ -4665,11 +4837,20 @@ Served asset /nested_form.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-15 17:38:29 -0500
 Served asset /application.js - 304 Not Modified (3ms)
+<<<<<<< HEAD
+=======
 
+>>>>>>> 7b505182bda34d28e9ae13c304e19ac28c54bc1f
 
 Started GET "/assets/teambuilder_logo.svg" for 127.0.0.1 at 2011-11-15 17:38:29 -0500
 Served asset /teambuilder_logo.svg - 304 Not Modified (0ms)
 
+<<<<<<< HEAD
+Started GET "/assets/teambuilder_logo.svg" for 127.0.0.1 at 2011-11-15 17:38:29 -0500
+Served asset /teambuilder_logo.svg - 304 Not Modified (0ms)
+
+=======
+>>>>>>> 7b505182bda34d28e9ae13c304e19ac28c54bc1f
 
 Started GET "/" for 127.0.0.1 at 2011-11-15 17:43:16 -0500
   Processing by ProjectsController#index as HTML
@@ -4865,12 +5046,21 @@ Served asset /application.js - 304 Not Modified (3ms)
 
 Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-15 17:45:18 -0500
 Served asset /jquery.js - 304 Not Modified (0ms)
+<<<<<<< HEAD
 
 
 Started GET "/assets/teambuilder_logo.svg" for 127.0.0.1 at 2011-11-15 17:45:20 -0500
 Served asset /teambuilder_logo.svg - 304 Not Modified (0ms)
 
 
+=======
+
+
+Started GET "/assets/teambuilder_logo.svg" for 127.0.0.1 at 2011-11-15 17:45:20 -0500
+Served asset /teambuilder_logo.svg - 304 Not Modified (0ms)
+
+
+>>>>>>> 7b505182bda34d28e9ae13c304e19ac28c54bc1f
 Started GET "/" for 127.0.0.1 at 2011-11-15 17:45:29 -0500
   Processing by ProjectsController#index as HTML
   [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
@@ -4891,12 +5081,21 @@ Served asset /jquery-ui.min.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 17:45:31 -0500
 Served asset /application.css - 200 OK (1ms)
+<<<<<<< HEAD
 
 
 Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2011-11-15 17:45:31 -0500
 Served asset /jquery.tokeninput.js - 304 Not Modified (2ms)
 
 
+=======
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2011-11-15 17:45:31 -0500
+Served asset /jquery.tokeninput.js - 304 Not Modified (2ms)
+
+
+>>>>>>> 7b505182bda34d28e9ae13c304e19ac28c54bc1f
 Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2011-11-15 17:45:31 -0500
 Served asset /jquery.min.js - 304 Not Modified (1ms)
 
@@ -4965,11 +5164,20 @@ Served asset /jquery.js - 304 Not Modified (0ms)
 
 Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-15 17:45:55 -0500
 Served asset /jquery-ui.js - 304 Not Modified (1ms)
+<<<<<<< HEAD
+=======
 
+>>>>>>> 7b505182bda34d28e9ae13c304e19ac28c54bc1f
 
 Started GET "/assets/teambuilder_logo.svg" for 127.0.0.1 at 2011-11-15 17:45:57 -0500
 Served asset /teambuilder_logo.svg - 304 Not Modified (1ms)
 
+<<<<<<< HEAD
+Started GET "/assets/teambuilder_logo.svg" for 127.0.0.1 at 2011-11-15 17:45:57 -0500
+Served asset /teambuilder_logo.svg - 304 Not Modified (1ms)
+
+=======
+>>>>>>> 7b505182bda34d28e9ae13c304e19ac28c54bc1f
 
 Started GET "/" for 127.0.0.1 at 2011-11-15 17:46:22 -0500
   Processing by ProjectsController#index as HTML
@@ -5015,6 +5223,7 @@ Served asset /application.js - 304 Not Modified (4ms)
 
 Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-15 17:46:24 -0500
 Served asset /jquery.js - 304 Not Modified (0ms)
+<<<<<<< HEAD
 
 
 Started GET "/assets/teambuilder_logo.svg" for 127.0.0.1 at 2011-11-15 17:46:25 -0500
@@ -5055,6 +5264,48 @@ Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2011-11-15 17:47:47 
 Served asset /jquery.min.js - 304 Not Modified (0ms)
 
 
+=======
+
+
+Started GET "/assets/teambuilder_logo.svg" for 127.0.0.1 at 2011-11-15 17:46:25 -0500
+Served asset /teambuilder_logo.svg - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-15 17:47:46 -0500
+  Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (97.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mProject Load (1.0ms)[0m  SELECT "projects".* FROM "projects" 
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered projects/index.html.erb within layouts/application (59.0ms)
+Compiled application.css  (0ms)  (pid 6024)
+Completed 200 OK in 419ms (Views: 177.0ms | ActiveRecord: 103.0ms)
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2011-11-15 17:47:47 -0500
+Served asset /jquery-ui.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-15 17:47:47 -0500
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-15 17:47:47 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 17:47:47 -0500
+Served asset /application.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2011-11-15 17:47:47 -0500
+Served asset /jquery.tokeninput.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2011-11-15 17:47:47 -0500
+Served asset /jquery.min.js - 304 Not Modified (0ms)
+
+
+>>>>>>> 7b505182bda34d28e9ae13c304e19ac28c54bc1f
 Started GET "/assets/nested_form.js?body=1" for 127.0.0.1 at 2011-11-15 17:47:48 -0500
 Served asset /nested_form.js - 304 Not Modified (0ms)
 
@@ -5095,6 +5346,7 @@ Served asset /jquery-ui.js - 304 Not Modified (0ms)
 
 Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2011-11-15 17:48:23 -0500
 Served asset /jquery-ui.min.js - 304 Not Modified (0ms)
+<<<<<<< HEAD
 
 
 Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2011-11-15 17:48:23 -0500
@@ -5898,6 +6150,470 @@ Served asset /jquery.min.js - 304 Not Modified (0ms)
 Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2011-11-15 18:00:42 -0500
 Served asset /jquery.tokeninput.js - 304 Not Modified (0ms)
 
+=======
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2011-11-15 17:48:23 -0500
+Served asset /jquery.min.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2011-11-15 17:48:23 -0500
+Served asset /jquery.tokeninput.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nested_form.js?body=1" for 127.0.0.1 at 2011-11-15 17:48:23 -0500
+Served asset /nested_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-15 17:48:23 -0500
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-15 17:48:23 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teambuilder_logo.svg" for 127.0.0.1 at 2011-11-15 17:48:24 -0500
+Served asset /teambuilder_logo.svg - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-15 17:48:31 -0500
+  Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mProject Load (1.0ms)[0m  SELECT "projects".* FROM "projects" 
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered projects/index.html.erb within layouts/application (60.0ms)
+Compiled application.css  (2ms)  (pid 6024)
+Completed 200 OK in 652ms (Views: 178.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-15 17:48:32 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-15 17:48:32 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2011-11-15 17:48:32 -0500
+Served asset /jquery.min.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2011-11-15 17:48:32 -0500
+Served asset /jquery-ui.min.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-15 17:48:33 -0500
+Served asset /jquery-ui.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 17:48:33 -0500
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/nested_form.js?body=1" for 127.0.0.1 at 2011-11-15 17:48:33 -0500
+Served asset /nested_form.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2011-11-15 17:48:33 -0500
+Served asset /jquery.tokeninput.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-15 17:48:33 -0500
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/teambuilder_logo.svg" for 127.0.0.1 at 2011-11-15 17:48:33 -0500
+Served asset /teambuilder_logo.svg - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-15 17:49:05 -0500
+  Processing by ProjectsController#index as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mProject Load (1.0ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered projects/index.html.erb within layouts/application (59.0ms)
+Compiled application.css  (1ms)  (pid 6024)
+Completed 200 OK in 381ms (Views: 179.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-15 17:49:06 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-15 17:49:06 -0500
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 17:49:06 -0500
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2011-11-15 17:49:06 -0500
+Served asset /jquery-ui.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2011-11-15 17:49:06 -0500
+Served asset /jquery.min.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2011-11-15 17:49:06 -0500
+Served asset /jquery.tokeninput.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/nested_form.js?body=1" for 127.0.0.1 at 2011-11-15 17:49:06 -0500
+Served asset /nested_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-15 17:49:07 -0500
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-15 17:49:07 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teambuilder_logo.svg" for 127.0.0.1 at 2011-11-15 17:49:08 -0500
+Served asset /teambuilder_logo.svg - 304 Not Modified (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-15 17:50:32 -0500
+  Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mProject Load (1.0ms)[0m  SELECT "projects".* FROM "projects" 
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered projects/index.html.erb within layouts/application (70.0ms)
+Compiled application.css  (2ms)  (pid 6024)
+Completed 200 OK in 338ms (Views: 190.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-15 17:50:32 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-15 17:50:32 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-15 17:50:33 -0500
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2011-11-15 17:50:33 -0500
+Served asset /jquery-ui.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 17:50:33 -0500
+Served asset /application.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2011-11-15 17:50:33 -0500
+Served asset /jquery.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2011-11-15 17:50:33 -0500
+Served asset /jquery.tokeninput.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-15 17:50:33 -0500
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/nested_form.js?body=1" for 127.0.0.1 at 2011-11-15 17:50:33 -0500
+Served asset /nested_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teambuilder_logo.svg" for 127.0.0.1 at 2011-11-15 17:50:34 -0500
+Served asset /teambuilder_logo.svg - 304 Not Modified (0ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2011-11-15 17:50:39 -0500
+  Processing by ProjectsController#new as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mSkill Load (1.0ms)[0m  [1mSELECT "skills".* FROM "skills" [0m
+  [1m[35m (2.0ms)[0m  SELECT 1 FROM "skills" INNER JOIN "project_skills" ON "skills"."id" = "project_skills"."skill_id" WHERE "project_skills"."project_id" IS NULL AND "skills"."id" = 3 LIMIT 1
+Rendered projects/_skill_checkboxes.html.erb (1257.0ms)
+Rendered projects/_form.html.erb (1326.0ms)
+Rendered projects/new.html.erb within layouts/application (1338.0ms)
+Completed 200 OK in 1933ms (Views: 1430.0ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 17:50:41 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-15 17:50:41 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-15 17:50:41 -0500
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2011-11-15 17:50:42 -0500
+Served asset /jquery-ui.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2011-11-15 17:50:42 -0500
+Served asset /jquery.tokeninput.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/nested_form.js?body=1" for 127.0.0.1 at 2011-11-15 17:50:42 -0500
+Served asset /nested_form.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-15 17:50:42 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-15 17:50:42 -0500
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2011-11-15 17:50:42 -0500
+Served asset /jquery.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teambuilder_logo.svg" for 127.0.0.1 at 2011-11-15 17:50:42 -0500
+Served asset /teambuilder_logo.svg - 304 Not Modified (0ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2011-11-15 17:52:15 -0500
+  Processing by ProjectsController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mSkill Load (1.0ms)[0m  SELECT "skills".* FROM "skills" 
+ERROR: compiling _app_views_projects__form_html_erb___16610570_40141248 RAISED c:/Users/Her Royal Gilchrist/team_04/app/views/projects/_form.html.erb:44: syntax error, unexpected tASSOC, expecting tCOLON2 or '[' or '.'
+...r.append= ( f.submit, :class => 'myButton' );@output_buffer....
+...                               ^
+Function body:           def _app_views_projects__form_html_erb___16610570_40141248(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "projects/_form";_old_output_buffer = @output_buffer;form = local_assigns[:form];;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.append=  form_for @project do |f| @output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( f.error_messages );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  
+  
+  <!-- ******Skill checkboxes******** -->
+  	');@output_buffer.append= ( render :partial => 'skill_checkboxes' );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  <!-- ************************************* -->
+  
+  
+  
+  
+  <!-- ******Nested attachment form******** -->
+  
+  
+  
+  <!-- ************************************* -->
+  
+  
+  <p>
+    ');@output_buffer.append= ( f.label :name, "Project Name" );@output_buffer.safe_concat('<br />
+    ');@output_buffer.append= ( f.text_field :name );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </p>
+  <p>
+    ');@output_buffer.append= ( f.label :description );@output_buffer.safe_concat('<br />
+    ');@output_buffer.append= ( f.text_area :description, :rows => 4, :cols => 35 );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </p>
+  <p>
+    ');@output_buffer.append= ( f.label :team_size, "Number of People" );@output_buffer.safe_concat('<br />
+    ');@output_buffer.append= ( f.number_field :team_size );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </p>
+  <p>
+    ');@output_buffer.append= ( f.label :duration );@output_buffer.safe_concat('<br />
+    ');@output_buffer.append= ( f.date_select :start_date, :order => [:month, :day, :year] );@output_buffer.safe_concat(' - ');@output_buffer.append= ( f.date_select :end_date, :order => [:month, :day, :year] );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </p>
+  <p>
+    ');@output_buffer.append= ( f.label :hours_per_week, "Work Commitment (hrs/week)" );@output_buffer.safe_concat('<br />
+    ');@output_buffer.append= ( f.number_field :hours_per_week );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </p>
+  <p>
+    ');@output_buffer.append= ( f.label :photo, "Project Logo" );@output_buffer.safe_concat('<br />
+    ');@output_buffer.append= ( f.text_field :photo );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </p>
+  
+  <p>');@output_buffer.append= ( f.submit, :class => 'myButton' );@output_buffer.safe_concat('</p>
+'); end 
+@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_view/template.rb:282:in `module_eval'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_view/template.rb:282:in `compile'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_view/template.rb:190:in `compile!'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_view/template.rb:143:in `block in render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.1/lib/active_support/notifications.rb:55:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_view/template.rb:142:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_view/renderer/partial_renderer.rb:256:in `render_partial'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_view/renderer/partial_renderer.rb:228:in `block (2 levels) in render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_view/renderer/abstract_renderer.rb:33:in `block in instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.1/lib/active_support/notifications.rb:53:in `block in instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.1/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.1/lib/active_support/notifications.rb:53:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_view/renderer/abstract_renderer.rb:33:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_view/renderer/partial_renderer.rb:227:in `block in render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_view/renderer/abstract_renderer.rb:22:in `wrap_formats'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_view/renderer/partial_renderer.rb:219:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_view/renderer/renderer.rb:41:in `render_partial'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_view/helpers/rendering_helper.rb:27:in `render'
+c:/Users/Her Royal Gilchrist/team_04/app/views/projects/new.html.erb:3:in `_app_views_projects_new_html_erb___220891805_36436644'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_view/template.rb:144:in `block in render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.1/lib/active_support/notifications.rb:55:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_view/template.rb:142:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_view/renderer/template_renderer.rb:40:in `block (2 levels) in render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_view/renderer/abstract_renderer.rb:33:in `block in instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.1/lib/active_support/notifications.rb:53:in `block in instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.1/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.1/lib/active_support/notifications.rb:53:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_view/renderer/abstract_renderer.rb:33:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_view/renderer/template_renderer.rb:39:in `block in render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_view/renderer/template_renderer.rb:47:in `render_with_layout'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_view/renderer/template_renderer.rb:38:in `render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_view/renderer/template_renderer.rb:12:in `block in render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_view/renderer/abstract_renderer.rb:22:in `wrap_formats'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_view/renderer/template_renderer.rb:9:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_view/renderer/renderer.rb:36:in `render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_view/renderer/renderer.rb:17:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/abstract_controller/rendering.rb:120:in `_render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_controller/metal/streaming.rb:250:in `_render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/abstract_controller/rendering.rb:114:in `render_to_body'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_controller/metal/renderers.rb:30:in `render_to_body'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_controller/metal/compatibility.rb:43:in `render_to_body'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/abstract_controller/rendering.rb:99:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_controller/metal/rendering.rb:16:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.1/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+c:/Ruby192/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.1/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.1.1/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_controller/metal/instrumentation.rb:39:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/abstract_controller/base.rb:167:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_controller/metal/rendering.rb:10:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.1/lib/active_support/callbacks.rb:425:in `_run__946137675__process_action__762951914__callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.1/lib/active_support/callbacks.rb:386:in `_run_process_action_callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.1/lib/active_support/callbacks.rb:81:in `run_callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/abstract_controller/callbacks.rb:17:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_controller/metal/rescue.rb:17:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.1/lib/active_support/notifications.rb:53:in `block in instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.1/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.1/lib/active_support/notifications.rb:53:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_controller/metal/params_wrapper.rb:201:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.1.1/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/abstract_controller/base.rb:121:in `process'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/abstract_controller/rendering.rb:45:in `process'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_controller/metal.rb:193:in `dispatch'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_controller/metal.rb:236:in `block in action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/routing/route_set.rb:65:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/routing/route_set.rb:65:in `dispatch'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/routing/route_set.rb:29:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/route_set.rb:152:in `block in call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:96:in `block in recognize'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:82:in `optimized_each'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:95:in `recognize'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/route_set.rb:141:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/routing/route_set.rb:532:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/etag.rb:23:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/conditionalget.rb:25:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/head.rb:14:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/flash.rb:243:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/session/abstract/id.rb:195:in `context'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/session/abstract/id.rb:190:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/cookies.rb:331:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.1.1/lib/active_record/query_cache.rb:62:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.1.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:477:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.1/lib/active_support/callbacks.rb:392:in `_run_call_callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.1/lib/active_support/callbacks.rb:81:in `run_callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/reloader.rb:68:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/sendfile.rb:101:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.1.1/lib/rails/rack/logger.rb:13:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/methodoverride.rb:24:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/runtime.rb:17:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.1/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/lock.rb:15:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/static.rb:53:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.1.1/lib/rails/engine.rb:456:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.1.1/lib/rails/rack/content_length.rb:16:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.1.1/lib/rails/rack/log_tailer.rb:14:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/handler/webrick.rb:59:in `service'
+c:/Ruby192/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+c:/Ruby192/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+c:/Ruby192/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+Rendered projects/_form.html.erb (63.0ms)
+Rendered projects/new.html.erb within layouts/application (71.0ms)
+Completed 500 Internal Server Error in 361ms
+
+ActionView::Template::Error (c:/Users/Her Royal Gilchrist/team_04/app/views/projects/_form.html.erb:44: syntax error, unexpected tASSOC, expecting tCOLON2 or '[' or '.'
+...r.append= ( f.submit, :class => 'myButton' );@output_buffer....
+...                               ^):
+    41:     <%= f.text_field :photo %>
+    42:   </p>
+    43:   
+    44:   <p><%= f.submit, :class => 'myButton' %></p>
+    45: <% end %>
+  app/views/projects/new.html.erb:3:in `_app_views_projects_new_html_erb___220891805_36436644'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (24.0ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2011-11-15 17:53:11 -0500
+  Processing by ProjectsController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mSkill Load (0.0ms)[0m  SELECT "skills".* FROM "skills" 
+  [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "skills" INNER JOIN "project_skills" ON "skills"."id" = "project_skills"."skill_id" WHERE "project_skills"."project_id" IS NULL AND "skills"."id" = 3 LIMIT 1[0m
+Rendered projects/_skill_checkboxes.html.erb (60.0ms)
+Rendered projects/_form.html.erb (125.0ms)
+Rendered projects/new.html.erb within layouts/application (138.0ms)
+Completed 200 OK in 458ms (Views: 257.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-15 17:53:12 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-15 17:53:12 -0500
+Served asset /jquery-ui.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-15 17:53:12 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2011-11-15 17:53:12 -0500
+Served asset /jquery-ui.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2011-11-15 17:53:12 -0500
+Served asset /jquery.tokeninput.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2011-11-15 17:53:12 -0500
+Served asset /jquery.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nested_form.js?body=1" for 127.0.0.1 at 2011-11-15 17:53:12 -0500
+Served asset /nested_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-15 17:53:12 -0500
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 17:53:12 -0500
+Served asset /application.css - 304 Not Modified (1ms)
+>>>>>>> 7b505182bda34d28e9ae13c304e19ac28c54bc1f
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-15 18:00:42 -0500
 Served asset /application.js - 304 Not Modified (3ms)
@@ -5906,6 +6622,7 @@ Served asset /application.js - 304 Not Modified (3ms)
 Started GET "/assets/nested_form.js?body=1" for 127.0.0.1 at 2011-11-15 18:00:42 -0500
 Served asset /nested_form.js - 304 Not Modified (0ms)
 
+<<<<<<< HEAD
 
 Started GET "/assets/teambuilder_logo.svg" for 127.0.0.1 at 2011-11-15 18:00:42 -0500
 Served asset /teambuilder_logo.svg - 304 Not Modified (0ms)
@@ -6632,3 +7349,7 @@ Served asset /nested_form.js - 304 Not Modified (0ms)
 
 Started GET "/assets/teambuilder_logo.svg" for 127.0.0.1 at 2011-11-15 18:30:02 -0500
 Served asset /teambuilder_logo.svg - 304 Not Modified (0ms)
+=======
+Started GET "/assets/teambuilder_logo.svg" for 127.0.0.1 at 2011-11-15 17:53:13 -0500
+Served asset /teambuilder_logo.svg - 304 Not Modified (2ms)
+>>>>>>> 7b505182bda34d28e9ae13c304e19ac28c54bc1f
