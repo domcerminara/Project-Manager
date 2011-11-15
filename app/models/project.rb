@@ -31,4 +31,9 @@ class Project < ActiveRecord::Base
   # Other Methods
   # ----------------------------
   
+  # the project creator
+  def creator
+  	User.find_by_id(creator_id)
+  end
+  
 end

@@ -1,4 +1,5 @@
 class ProjectsController < ApplicationController
+	before_filter :login_required
   def index
     @projects = Project.all
   end
@@ -14,12 +15,12 @@ class ProjectsController < ApplicationController
     
     # Builds 3 attachment forms on the new project page
     #3.times {@project.attachments.build}
+    
+    @skills = Skill.all
   end
 
   def create
     @project = Project.new(params[:project])
-    
-    @skills = Skill.all
     
     if current_user
     	@project.creator_id = current_user.id
@@ -34,6 +35,7 @@ class ProjectsController < ApplicationController
 
   def edit
     @project = Project.find(params[:id])
+    @skills = Skill.all
   end
 
   def update

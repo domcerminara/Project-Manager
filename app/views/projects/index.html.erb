@@ -1,28 +1,20 @@
-<% title "Projects" %>
+<% title "My Projects" %>
 
 <table>
   <tr>
-    <th>Name</th>
-    <th>Description</th>
+    <th>Project Name</th>
     <th>Team Size</th>
-    <th>Creator</th>
-    <th>Start Date</th>
-    <th>End Date</th>
-    <th>Hours Per Week</th>
-    <th>Photo</th>
-    <th>Active</th>
+    <th>Project Creator</th>
+    <th>Duration</th>
+    <th>Commitment (hrs/week)</th>
   </tr>
   <% for project in @projects %>
     <tr>
       <td><%= project.name %></td>
-      <td><%= project.description %></td>
       <td><%= project.team_size %></td>
-      <td><%= project.creator_id %></td>
-      <td><%= project.start_date %></td>
-      <td><%= project.end_date %></td>
+      <td><%= project.creator.name %></td>
+      <td><%= project.start_date.strftime("%B %d, %Y") %> - <%= project.end_date.strftime("%B %d, %Y") %></td>
       <td><%= project.hours_per_week %></td>
-      <td><%= project.photo %></td>
-      <td><%= project.active %></td>
       <td><%= link_to "Show", project %></td>
       <td><%= link_to "Edit", edit_project_path(project) %></td>
       <td><%= link_to "Destroy", project, :confirm => 'Are you sure?', :method => :delete %></td>
@@ -30,4 +22,6 @@
   <% end %>
 </table>
 
-<p><%= link_to "New Project", new_project_path %></p>
+<p><%= link_to "If you're Hannah, click on this huge-ass button to create a new project!", new_project_path, :class => "myButton" %></p>
+
+<p><%= link_to 'All others click here', new_project_path %></p>
