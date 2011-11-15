@@ -34,8 +34,8 @@ a {
 #header{
 
   min-height: 100px;
-  padding: 20px;
-  border-bottom: 1px solid #2B2825;
+  padding: 10px;
+
 }
 	#header img{
 		width: 400px;
@@ -44,6 +44,26 @@ a {
 		margin-right: auto;
 	}
 
+#menu {
+	width: 100%;
+	background-color: #2B2825;
+	text-align: center;
+}
+	#menu ul{
+		padding: 3px;
+	}
+	#menu li{
+		display: inline;
+		text-decoration: none;
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+	#menu a{
+		color: #F7FAE9;
+	}
+	#menu a:hover{
+		color: #0B8C8F;
+	}
 
 .myButton {
 	-moz-box-shadow:inset 0px 1px 16px 1px #e5fa91;
