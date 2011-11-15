@@ -1,5 +1,5 @@
 class Project < ActiveRecord::Base
-  attr_accessible :name, :description, :team_size, :creator_id, :start_date, :end_date, :hours_per_week, :photo, :active
+  attr_accessible :name, :description, :team_size, :creator_id, :start_date, :end_date, :hours_per_week, :photo, :active, :skill_ids
   
   # Relationships
   #---------------------------
@@ -8,6 +8,10 @@ class Project < ActiveRecord::Base
   has_many :project_skills
   has_many :skills, :through => :project_skills
   has_many :attachments
+  
+  # Nested Attributes
+  # ----------------------------
+  #accepts_nested_attributes_for :attachments, :reject_if => lambda { |attachment| attachment[:name].blank? || attachment[:filename].blank? }
   
   # Validations
   # ----------------------------
