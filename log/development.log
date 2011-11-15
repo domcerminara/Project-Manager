@@ -654,3 +654,1820 @@ ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
   
 
 Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-15 11:17:02 -0500
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.0ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+Rendered projects/index.html.erb within layouts/application (61.0ms)
+Completed 200 OK in 217ms (Views: 215.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 11:17:06 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/projects/2" for 127.0.0.1 at 2011-11-15 11:17:08 -0500
+  Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mProject Load (1.0ms)[0m  SELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", "2"]]
+Rendered projects/show.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 49ms (Views: 44.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 11:17:08 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-11-15 11:17:08 -0500
+Served asset /defaults.js - 404 Not Found (7ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/projects/2/edit" for 127.0.0.1 at 2011-11-15 11:17:12 -0500
+  Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProject Load (1.0ms)[0m  [1mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", "2"]]
+Rendered projects/_form.html.erb (31.0ms)
+Rendered projects/edit.html.erb within layouts/application (155.0ms)
+Completed 200 OK in 185ms (Views: 182.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-11-15 11:17:12 -0500
+Served asset /defaults.js - 404 Not Found (26ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 11:17:12 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/projects/2" for 127.0.0.1 at 2011-11-15 11:17:14 -0500
+  Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mProject Load (1.0ms)[0m  SELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", "2"]]
+Rendered projects/show.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 53ms (Views: 49.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-11-15 11:17:15 -0500
+Served asset /defaults.js - 404 Not Found (4ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 11:17:15 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-15 11:18:36 -0500
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.0ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+Rendered projects/index.html.erb within layouts/application (24.0ms)
+Compiled application.css  (1ms)  (pid 3148)
+Completed 200 OK in 102ms (Views: 99.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 11:18:36 -0500
+Served asset /application.css - 200 OK (29ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2011-11-15 11:18:46 -0500
+  Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (1.0ms)[0m  SELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", "1"]]
+Rendered projects/show.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 41ms (Views: 37.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-11-15 11:18:46 -0500
+Served asset /defaults.js - 404 Not Found (4ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-15 11:22:14 -0500
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.0ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+Rendered projects/index.html.erb within layouts/application (49.0ms)
+Cache for Asset (application.js) is stale
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/jquery-rails-1.0.17/vendor/assets/javascripts/jquery.js isn't in paths: c:/Users/Owner/team_04/app/assets/images, c:/Users/Owner/team_04/app/assets/javascripts, c:/Users/Owner/team_04/app/assets/stylesheets, c:/Users/Owner/team_04/vendor/assets/stylesheets, c:/Ruby192/lib/ruby/gems/1.9.1/gems/jquery-rails-1.0.10/vendor/assets/javascripts
+Compiled application.js  (9ms)  (pid 3148)
+Compiled jquery.js  (11ms)  (pid 3148)
+Compiled jquery_ujs.js  (1ms)  (pid 3148)
+Compiled jquery-ui.js  (15ms)  (pid 3148)
+Compiled jquery-ui.min.js  (9ms)  (pid 3148)
+Compiled jquery.min.js  (4ms)  (pid 3148)
+Compiled jquery.tokeninput.js  (2ms)  (pid 3148)
+Compiled nested_form.js  (1ms)  (pid 3148)
+Completed 200 OK in 346ms (Views: 344.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 11:22:15 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-15 11:22:15 -0500
+Served asset /jquery-ui.js - 200 OK (26ms)
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2011-11-15 11:22:15 -0500
+Served asset /jquery.min.js - 200 OK (22ms)
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2011-11-15 11:22:15 -0500
+Served asset /jquery-ui.min.js - 200 OK (77ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2011-11-15 11:22:15 -0500
+Served asset /jquery.tokeninput.js - 200 OK (18ms)
+
+
+Started GET "/assets/nested_form.js?body=1" for 127.0.0.1 at 2011-11-15 11:22:15 -0500
+Served asset /nested_form.js - 200 OK (23ms)
+
+
+Started GET "/projects/2/edit" for 127.0.0.1 at 2011-11-15 11:22:25 -0500
+  Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mProject Load (0.0ms)[0m  SELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", "2"]]
+Rendered projects/_form.html.erb (23.0ms)
+Rendered projects/edit.html.erb within layouts/application (27.0ms)
+Completed 200 OK in 49ms (Views: 45.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-15 11:22:25 -0500
+Served asset /application.js - 200 OK (142ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 11:22:25 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-15 11:22:25 -0500
+Served asset /jquery_ujs.js - 200 OK (23ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-15 11:22:25 -0500
+Served asset /jquery.js - 200 OK (23ms)
+
+
+Started GET "/projects/2" for 127.0.0.1 at 2011-11-15 11:22:28 -0500
+  Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProject Load (0.0ms)[0m  [1mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", "2"]]
+Rendered projects/show.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 35ms (Views: 33.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 11:22:29 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-15 11:24:35 -0500
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.0ms)[0m  SELECT "projects".* FROM "projects" 
+Rendered projects/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 38ms (Views: 35.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-15 11:24:35 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 11:24:35 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-15 11:24:35 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-15 11:24:35 -0500
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2011-11-15 11:24:35 -0500
+Served asset /jquery.tokeninput.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2011-11-15 11:24:35 -0500
+Served asset /jquery.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2011-11-15 11:24:35 -0500
+Served asset /jquery-ui.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nested_form.js?body=1" for 127.0.0.1 at 2011-11-15 11:24:35 -0500
+Served asset /nested_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-15 11:24:35 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-15 11:24:48 -0500
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.0ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+Rendered projects/index.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 47ms (Views: 44.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-15 11:24:48 -0500
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-15 11:24:48 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-15 11:24:48 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2011-11-15 11:24:48 -0500
+Served asset /jquery.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 11:24:48 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2011-11-15 11:24:48 -0500
+Served asset /jquery-ui.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2011-11-15 11:24:48 -0500
+Served asset /jquery.tokeninput.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nested_form.js?body=1" for 127.0.0.1 at 2011-11-15 11:24:48 -0500
+Served asset /nested_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-15 11:24:48 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/projects/2" for 127.0.0.1 at 2011-11-15 11:49:39 -0500
+  Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mProject Load (0.0ms)[0m  SELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mSkill Load (1.0ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "project_skills" ON "skills"."id" = "project_skills"."skill_id" WHERE "project_skills"."project_id" = 2[0m
+Rendered projects/show.html.erb within layouts/application (361.0ms)
+Completed 200 OK in 801ms (Views: 436.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-15 11:49:40 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 11:49:40 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-15 11:49:40 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-15 11:49:40 -0500
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2011-11-15 11:49:40 -0500
+Served asset /jquery-ui.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2011-11-15 11:49:40 -0500
+Served asset /jquery.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2011-11-15 11:49:40 -0500
+Served asset /jquery.tokeninput.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-15 11:49:40 -0500
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/nested_form.js?body=1" for 127.0.0.1 at 2011-11-15 11:49:40 -0500
+Served asset /nested_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2011-11-15 11:49:47 -0500
+  Processing by ProjectsController#new as HTML
+  [1m[35mSkill Load (0.0ms)[0m  SELECT "skills".* FROM "skills" 
+Rendered projects/_skill_fields.html.erb (3.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "skills".* FROM "skills" [0m
+Rendered projects/_skill_fields.html.erb (1.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "skills".* FROM "skills" 
+Rendered projects/_skill_fields.html.erb (1.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "skills".* FROM "skills" [0m
+Rendered projects/_skill_fields.html.erb (1.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "skills".* FROM "skills" 
+Rendered projects/_skill_fields.html.erb (1.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "skills".* FROM "skills" [0m
+Rendered projects/_skill_fields.html.erb (1.0ms)
+Rendered projects/_form.html.erb (85.0ms)
+Rendered projects/new.html.erb within layouts/application (90.0ms)
+Completed 200 OK in 197ms (Views: 105.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-15 11:49:47 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 11:49:47 -0500
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-15 11:49:47 -0500
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2011-11-15 11:49:47 -0500
+Served asset /jquery.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-15 11:49:47 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-15 11:49:47 -0500
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2011-11-15 11:49:47 -0500
+Served asset /jquery.tokeninput.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nested_form.js?body=1" for 127.0.0.1 at 2011-11-15 11:49:47 -0500
+Served asset /nested_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2011-11-15 11:49:47 -0500
+Served asset /jquery-ui.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/sections" for 127.0.0.1 at 2011-11-15 11:50:12 -0500
+
+ActionController::RoutingError (No route matches [GET] "/sections"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/skills" for 127.0.0.1 at 2011-11-15 11:50:13 -0500
+  Processing by SkillsController#index as HTML
+  [1m[35mSkill Load (0.0ms)[0m  SELECT "skills".* FROM "skills" 
+Rendered skills/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 21ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 11:50:13 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-15 11:50:13 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-15 11:50:13 -0500
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-15 11:50:13 -0500
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2011-11-15 11:50:13 -0500
+Served asset /jquery.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2011-11-15 11:50:13 -0500
+Served asset /jquery-ui.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2011-11-15 11:50:13 -0500
+Served asset /jquery.tokeninput.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nested_form.js?body=1" for 127.0.0.1 at 2011-11-15 11:50:13 -0500
+Served asset /nested_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-15 11:50:13 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/skills/new" for 127.0.0.1 at 2011-11-15 11:50:14 -0500
+  Processing by SkillsController#new as HTML
+Rendered skills/_form.html.erb (18.0ms)
+Rendered skills/new.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 50ms (Views: 48.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-15 11:50:15 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-15 11:50:15 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2011-11-15 11:50:15 -0500
+Served asset /jquery-ui.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-15 11:50:15 -0500
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2011-11-15 11:50:15 -0500
+Served asset /jquery.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 11:50:15 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nested_form.js?body=1" for 127.0.0.1 at 2011-11-15 11:50:15 -0500
+Served asset /nested_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2011-11-15 11:50:15 -0500
+Served asset /jquery.tokeninput.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-15 11:50:15 -0500
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started POST "/skills" for 127.0.0.1 at 2011-11-15 11:51:12 -0500
+  Processing by SkillsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tjdLCwD/sMtzZnwWte0NVr3OaFVqo1AwFoBHPITnc0g=", "skill"=>{"name"=>"Ruby Programming", "level"=>"1", "description"=>"The ability to program effectively in Ruby. Experience with rails is also appreciated."}, "commit"=>"Create Skill"}
+  [1m[36mSQL (95.0ms)[0m  [1mINSERT INTO "skills" ("created_at", "description", "level", "name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Tue, 15 Nov 2011 16:51:12 UTC +00:00], ["description", "The ability to program effectively in Ruby. Experience with rails is also appreciated."], ["level", 1], ["name", "Ruby Programming"], ["updated_at", Tue, 15 Nov 2011 16:51:12 UTC +00:00]]
+Redirected to http://localhost:3000/skills/1
+Completed 302 Found in 183ms
+
+
+Started GET "/skills/1" for 127.0.0.1 at 2011-11-15 11:51:13 -0500
+  Processing by SkillsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSkill Load (0.0ms)[0m  SELECT "skills".* FROM "skills" WHERE "skills"."id" = ? LIMIT 1  [["id", "1"]]
+Rendered skills/show.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 30ms (Views: 27.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-15 11:51:13 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 11:51:13 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-15 11:51:13 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-15 11:51:13 -0500
+Served asset /jquery-ui.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2011-11-15 11:51:13 -0500
+Served asset /jquery-ui.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2011-11-15 11:51:13 -0500
+Served asset /jquery.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2011-11-15 11:51:13 -0500
+Served asset /jquery.tokeninput.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nested_form.js?body=1" for 127.0.0.1 at 2011-11-15 11:51:13 -0500
+Served asset /nested_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-15 11:51:13 -0500
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/skills" for 127.0.0.1 at 2011-11-15 11:51:15 -0500
+  Processing by SkillsController#index as HTML
+  [1m[36mSkill Load (0.0ms)[0m  [1mSELECT "skills".* FROM "skills" [0m
+Rendered skills/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 39ms (Views: 36.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-15 11:51:16 -0500
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-15 11:51:16 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 11:51:16 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-15 11:51:16 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2011-11-15 11:51:16 -0500
+Served asset /jquery-ui.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2011-11-15 11:51:16 -0500
+Served asset /jquery.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2011-11-15 11:51:16 -0500
+Served asset /jquery.tokeninput.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-15 11:51:16 -0500
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/nested_form.js?body=1" for 127.0.0.1 at 2011-11-15 11:51:16 -0500
+Served asset /nested_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2011-11-15 11:51:20 -0500
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.0ms)[0m  SELECT "projects".* FROM "projects" 
+Rendered projects/index.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 46ms (Views: 43.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2011-11-15 11:51:21 -0500
+Served asset /jquery-ui.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 11:51:21 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-15 11:51:21 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-15 11:51:21 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2011-11-15 11:51:21 -0500
+Served asset /jquery.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-15 11:51:21 -0500
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2011-11-15 11:51:21 -0500
+Served asset /jquery.tokeninput.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-15 11:51:21 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/nested_form.js?body=1" for 127.0.0.1 at 2011-11-15 11:51:21 -0500
+Served asset /nested_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2011-11-15 11:51:25 -0500
+  Processing by ProjectsController#new as HTML
+  [1m[36mSkill Load (0.0ms)[0m  [1mSELECT "skills".* FROM "skills" [0m
+Rendered projects/_skill_fields.html.erb (3.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "skills".* FROM "skills" 
+Rendered projects/_skill_fields.html.erb (1.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "skills".* FROM "skills" [0m
+Rendered projects/_skill_fields.html.erb (1.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "skills".* FROM "skills" 
+Rendered projects/_skill_fields.html.erb (1.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "skills".* FROM "skills" [0m
+Rendered projects/_skill_fields.html.erb (2.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "skills".* FROM "skills" 
+Rendered projects/_skill_fields.html.erb (1.0ms)
+Rendered projects/_form.html.erb (43.0ms)
+Rendered projects/new.html.erb within layouts/application (46.0ms)
+Completed 200 OK in 144ms (Views: 61.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-15 11:51:25 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-15 11:51:25 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-15 11:51:25 -0500
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2011-11-15 11:51:25 -0500
+Served asset /jquery-ui.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 11:51:25 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2011-11-15 11:51:25 -0500
+Served asset /jquery.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2011-11-15 11:51:25 -0500
+Served asset /jquery.tokeninput.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nested_form.js?body=1" for 127.0.0.1 at 2011-11-15 11:51:25 -0500
+Served asset /nested_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-15 11:51:25 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2011-11-15 11:52:07 -0500
+  Processing by ProjectsController#new as HTML
+Rendered projects/_form.html.erb (121.0ms)
+Rendered projects/new.html.erb within layouts/application (125.0ms)
+Completed 500 Internal Server Error in 226ms
+
+ActionView::Template::Error (wrong number of arguments (4 for 3)):
+    5:   <!-- ******Nested skill form******** -->
+    6:   <div class='nested_form'>
+    7:   	<h3>Add some skills:</h3>
+    8:   <% f.fields_for :skills do |skill_form| %>
+    9: 				<!-- Add the skill fields here -->
+    10: 				<%= render :partial => 'skill_fields', :locals => {:f=>skill_form} %>
+    11: 				
+  app/views/projects/_form.html.erb:8:in `block in _app_views_projects__form_html_erb__336065632_42319284'
+  app/views/projects/_form.html.erb:1:in `_app_views_projects__form_html_erb__336065632_42319284'
+  app/views/projects/new.html.erb:3:in `_app_views_projects_new_html_erb__973964085_40064952'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (23.0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2011-11-15 12:05:07 -0500
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (1.0ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+Rendered projects/index.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 42ms (Views: 39.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 12:05:08 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-15 12:05:08 -0500
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-15 12:05:08 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-15 12:05:08 -0500
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2011-11-15 12:05:08 -0500
+Served asset /jquery.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2011-11-15 12:05:08 -0500
+Served asset /jquery-ui.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2011-11-15 12:05:08 -0500
+Served asset /jquery.tokeninput.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nested_form.js?body=1" for 127.0.0.1 at 2011-11-15 12:05:08 -0500
+Served asset /nested_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-15 12:05:08 -0500
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2011-11-15 12:05:09 -0500
+  Processing by ProjectsController#new as HTML
+Rendered projects/_attachment_fields.html.erb (2.0ms)
+Rendered projects/_attachment_fields.html.erb (1.0ms)
+Rendered projects/_attachment_fields.html.erb (0.0ms)
+Rendered projects/_form.html.erb (25.0ms)
+Rendered projects/new.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 206ms (Views: 131.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-15 12:05:10 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2011-11-15 12:05:10 -0500
+Served asset /jquery-ui.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 12:05:10 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2011-11-15 12:05:10 -0500
+Served asset /jquery.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-15 12:05:10 -0500
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-15 12:05:10 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2011-11-15 12:05:10 -0500
+Served asset /jquery.tokeninput.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nested_form.js?body=1" for 127.0.0.1 at 2011-11-15 12:05:10 -0500
+Served asset /nested_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-15 12:05:10 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assignments?page=3" for 127.0.0.1 at 2011-11-15 12:05:19 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assignments"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/atta" for 127.0.0.1 at 2011-11-15 12:05:20 -0500
+
+ActionController::RoutingError (No route matches [GET] "/atta"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/attachments" for 127.0.0.1 at 2011-11-15 12:05:21 -0500
+  Processing by AttachmentsController#index as HTML
+  [1m[35mAttachment Load (0.0ms)[0m  SELECT "attachments".* FROM "attachments" 
+Rendered attachments/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 60ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/attachment" for 127.0.0.1 at 2011-11-15 12:05:21 -0500
+
+ActionController::RoutingError (No route matches [GET] "/attachment"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-15 12:05:21 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-15 12:05:21 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2011-11-15 12:05:22 -0500
+Served asset /jquery-ui.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2011-11-15 12:05:22 -0500
+Served asset /jquery.tokeninput.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2011-11-15 12:05:22 -0500
+Served asset /jquery.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-15 12:05:22 -0500
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nested_form.js?body=1" for 127.0.0.1 at 2011-11-15 12:05:22 -0500
+Served asset /nested_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 12:05:22 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-15 12:05:22 -0500
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/attachments/new" for 127.0.0.1 at 2011-11-15 12:05:23 -0500
+  Processing by AttachmentsController#new as HTML
+Rendered attachments/_form.html.erb (14.0ms)
+Rendered attachments/new.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 35ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2011-11-15 12:05:23 -0500
+Served asset /jquery.min.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-15 12:05:23 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2011-11-15 12:05:23 -0500
+Served asset /jquery-ui.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 12:05:23 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-15 12:05:23 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2011-11-15 12:05:23 -0500
+Served asset /jquery.tokeninput.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-15 12:05:23 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nested_form.js?body=1" for 127.0.0.1 at 2011-11-15 12:05:23 -0500
+Served asset /nested_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-15 12:05:23 -0500
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2011-11-15 12:09:44 -0500
+  Processing by ProjectsController#new as HTML
+Rendered projects/_form.html.erb (5.0ms)
+Rendered projects/new.html.erb within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 98ms
+
+ActionView::Template::Error (wrong number of arguments (4 for 3)):
+    5:   <!-- ******Nested attachment form******** -->
+    6:   <div class='nested_form'>
+    7:   	<h3>Attach some files:</h3>
+    8:   <% f.fields_for :attachments do |attachment_form| %>
+    9: 				<!-- Add the attachment fields here -->
+    10: 				<%= render :partial => 'attachment_fields', :locals => {:f=>attachment_form} %>
+    11: 				
+  app/views/projects/_form.html.erb:8:in `block in _app_views_projects__form_html_erb__336065632_41873388'
+  app/views/projects/_form.html.erb:1:in `_app_views_projects__form_html_erb__336065632_41873388'
+  app/views/projects/new.html.erb:3:in `_app_views_projects_new_html_erb__973964085_40064952'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.0ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2011-11-15 12:14:09 -0500
+  Processing by ProjectsController#new as HTML
+Rendered projects/_attachment_fields.html.erb (1.0ms)
+Rendered projects/_attachment_fields.html.erb (1.0ms)
+Rendered projects/_attachment_fields.html.erb (1.0ms)
+Rendered projects/_form.html.erb (24.0ms)
+Rendered projects/new.html.erb within layouts/application (29.0ms)
+Completed 200 OK in 233ms (Views: 156.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-15 12:14:09 -0500
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-15 12:14:09 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-15 12:14:09 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2011-11-15 12:14:09 -0500
+Served asset /jquery-ui.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 12:14:09 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2011-11-15 12:14:09 -0500
+Served asset /jquery.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2011-11-15 12:14:09 -0500
+Served asset /jquery.tokeninput.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-15 12:14:09 -0500
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/nested_form.js?body=1" for 127.0.0.1 at 2011-11-15 12:14:09 -0500
+Served asset /nested_form.js - 304 Not Modified (0ms)
+
+
+Started POST "/projects" for 127.0.0.1 at 2011-11-15 12:14:14 -0500
+  Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tjdLCwD/sMtzZnwWte0NVr3OaFVqo1AwFoBHPITnc0g=", "project"=>{"name"=>"", "description"=>"", "team_size"=>"", "creator_id"=>"", "start_date(1i)"=>"2011", "start_date(2i)"=>"11", "start_date(3i)"=>"15", "end_date(1i)"=>"2011", "end_date(2i)"=>"11", "end_date(3i)"=>"15", "hours_per_week"=>"", "photo"=>""}, "commit"=>"Create Project"}
+Rendered projects/_form.html.erb (13.0ms)
+Rendered projects/new.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 52ms (Views: 33.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 12:14:15 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-15 12:14:15 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-15 12:14:15 -0500
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2011-11-15 12:14:15 -0500
+Served asset /jquery.min.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-15 12:14:15 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2011-11-15 12:14:15 -0500
+Served asset /jquery-ui.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2011-11-15 12:14:15 -0500
+Served asset /jquery.tokeninput.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nested_form.js?body=1" for 127.0.0.1 at 2011-11-15 12:14:15 -0500
+Served asset /nested_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-15 12:14:15 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2011-11-15 12:14:41 -0500
+  Processing by ProjectsController#new as HTML
+Rendered projects/_form.html.erb (6.0ms)
+Rendered projects/new.html.erb within layouts/application (8.0ms)
+Completed 500 Internal Server Error in 57ms
+
+ActionView::Template::Error (wrong number of arguments (4 for 3)):
+    5:   <!-- ******Nested attachment form******** -->
+    6:   <div class='nested_form'>
+    7:   	<h3>Attach some files:</h3>
+    8:   <% f.fields_for :attachments do |attachment_form| %>
+    9: 				<!-- Add the attachment fields here -->
+    10: 				<%= render :partial => 'attachment_fields', :locals => {:f=>attachment_form} %>
+    11: 				
+  app/views/projects/_form.html.erb:8:in `block in _app_views_projects__form_html_erb__336065632_29721960'
+  app/views/projects/_form.html.erb:1:in `_app_views_projects__form_html_erb__336065632_29721960'
+  app/views/projects/new.html.erb:3:in `_app_views_projects_new_html_erb__973964085_40064952'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.0ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2011-11-15 12:15:45 -0500
+  Processing by ProjectsController#new as HTML
+Rendered projects/_form.html.erb (5.0ms)
+Rendered projects/new.html.erb within layouts/application (8.0ms)
+Completed 500 Internal Server Error in 57ms
+
+ActionView::Template::Error (wrong number of arguments (4 for 3)):
+    5:   <!-- ******Nested attachment form******** -->
+    6:   <div class='nested_form'>
+    7:   	<h3>Attach some files:</h3>
+    8:   <% f.fields_for :attachments do %>
+    9: 				<!-- Add the attachment fields here -->
+    10: 				<%= render :partial => 'attachment_fields' %>
+    11: 				
+  app/views/projects/_form.html.erb:8:in `block in _app_views_projects__form_html_erb__336065632_40786212'
+  app/views/projects/_form.html.erb:1:in `_app_views_projects__form_html_erb__336065632_40786212'
+  app/views/projects/new.html.erb:3:in `_app_views_projects_new_html_erb__973964085_40064952'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.0ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2011-11-15 12:16:24 -0500
+  Processing by ProjectsController#new as HTML
+Rendered projects/_attachment_fields.html.erb (2.0ms)
+Rendered projects/_attachment_fields.html.erb (1.0ms)
+Rendered projects/_attachment_fields.html.erb (1.0ms)
+Rendered projects/_form.html.erb (24.0ms)
+Rendered projects/new.html.erb within layouts/application (29.0ms)
+Completed 200 OK in 79ms (Views: 44.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 12:16:25 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-15 12:16:25 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-15 12:16:25 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-15 12:16:25 -0500
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2011-11-15 12:16:25 -0500
+Served asset /jquery-ui.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2011-11-15 12:16:25 -0500
+Served asset /jquery.min.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2011-11-15 12:16:25 -0500
+Served asset /jquery.tokeninput.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nested_form.js?body=1" for 127.0.0.1 at 2011-11-15 12:16:25 -0500
+Served asset /nested_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-15 12:16:25 -0500
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2011-11-15 12:41:18 -0500
+  Processing by ProjectsController#new as HTML
+Rendered projects/_attachment_fields.html.erb (1.0ms)
+Rendered projects/_attachment_fields.html.erb (1.0ms)
+Rendered projects/_attachment_fields.html.erb (1.0ms)
+Rendered projects/_form.html.erb (50.0ms)
+Rendered projects/new.html.erb within layouts/application (144.0ms)
+Compiled application.js  (124ms)  (pid 6156)
+Completed 200 OK in 915ms (Views: 589.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-15 12:41:23 -0500
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (1.0ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+Rendered projects/index.html.erb within layouts/application (57.0ms)
+Completed 200 OK in 93ms (Views: 88.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-15 12:41:23 -0500
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.0ms)[0m  SELECT "projects".* FROM "projects" 
+Rendered projects/index.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 68ms (Views: 65.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-15 12:41:23 -0500
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (1.0ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+Rendered projects/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 38ms (Views: 34.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-15 12:41:24 -0500
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.0ms)[0m  SELECT "projects".* FROM "projects" 
+Rendered projects/index.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 38ms (Views: 36.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2011-11-15 12:41:24 -0500
+Served asset /jquery-ui.min.js - 200 OK (13ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-15 12:41:24 -0500
+Served asset /jquery_ujs.js - 200 OK (8ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-15 12:41:24 -0500
+Served asset /jquery-ui.js - 200 OK (7ms)
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2011-11-15 12:41:24 -0500
+Served asset /jquery.min.js - 200 OK (10ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 12:41:24 -0500
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-15 12:41:24 -0500
+Served asset /jquery.js - 200 OK (11ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2011-11-15 12:41:24 -0500
+Served asset /jquery.tokeninput.js - 200 OK (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-15 12:41:24 -0500
+Served asset /application.js - 200 OK (115ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2011-11-15 12:41:29 -0500
+  Processing by ProjectsController#new as HTML
+Rendered projects/_attachment_fields.html.erb (1.0ms)
+Rendered projects/_attachment_fields.html.erb (1.0ms)
+Rendered projects/_attachment_fields.html.erb (1.0ms)
+Rendered projects/_form.html.erb (22.0ms)
+Rendered projects/new.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 136ms (Views: 42.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2011-11-15 12:45:52 -0500
+  Processing by ProjectsController#new as HTML
+Rendered projects/_attachment_fields.html.erb (2.0ms)
+Rendered projects/_attachment_fields.html.erb (1.0ms)
+Rendered projects/_attachment_fields.html.erb (1.0ms)
+Rendered projects/_form.html.erb (40.0ms)
+Rendered projects/new.html.erb within layouts/application (137.0ms)
+Completed 200 OK in 680ms (Views: 309.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-15 12:45:57 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-15 12:45:57 -0500
+Served asset /jquery-ui.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-15 12:45:57 -0500
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 12:45:57 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2011-11-15 12:45:57 -0500
+Served asset /jquery.min.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2011-11-15 12:45:57 -0500
+Served asset /jquery-ui.min.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2011-11-15 12:45:57 -0500
+Served asset /jquery.tokeninput.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-15 12:45:57 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2011-11-15 12:50:04 -0500
+  Processing by ProjectsController#new as HTML
+Rendered projects/_attachment_fields.html.erb (1.0ms)
+Rendered projects/_attachment_fields.html.erb (1.0ms)
+Rendered projects/_attachment_fields.html.erb (1.0ms)
+Rendered projects/_form.html.erb (31.0ms)
+Rendered projects/new.html.erb within layouts/application (34.0ms)
+Compiled application.js  (9ms)  (pid 12916)
+Completed 200 OK in 119ms (Views: 88.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2011-11-15 12:50:05 -0500
+Served asset /jquery-ui.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-15 12:50:05 -0500
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-15 12:50:05 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2011-11-15 12:50:05 -0500
+Served asset /jquery.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-15 12:50:05 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 12:50:05 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-15 12:50:05 -0500
+Served asset /application.js - 200 OK (161ms)
+
+
+Started GET "/assets/nested_form.js?body=1" for 127.0.0.1 at 2011-11-15 12:50:05 -0500
+Served asset /nested_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2011-11-15 12:50:05 -0500
+Served asset /jquery.tokeninput.js - 304 Not Modified (0ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2011-11-15 12:50:32 -0500
+  Processing by ProjectsController#new as HTML
+Rendered projects/_attachment_fields.html.erb (1.0ms)
+Rendered projects/_attachment_fields.html.erb (1.0ms)
+Rendered projects/_attachment_fields.html.erb (1.0ms)
+Rendered projects/_form.html.erb (25.0ms)
+Rendered projects/new.html.erb within layouts/application (30.0ms)
+Completed 200 OK in 194ms (Views: 130.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-15 12:50:32 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2011-11-15 12:50:32 -0500
+Served asset /jquery-ui.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 12:50:32 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2011-11-15 12:50:32 -0500
+Served asset /jquery.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-15 12:50:32 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-15 12:50:32 -0500
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2011-11-15 12:50:32 -0500
+Served asset /jquery.tokeninput.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nested_form.js?body=1" for 127.0.0.1 at 2011-11-15 12:50:32 -0500
+Served asset /nested_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tokeninput.js" for 127.0.0.1 at 2011-11-15 12:50:32 -0500
+Served asset /tokeninput.js - 404 Not Found (5ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/tokeninput.js"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-15 12:50:32 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2011-11-15 12:51:21 -0500
+  Processing by ProjectsController#new as HTML
+Rendered projects/_attachment_fields.html.erb (2.0ms)
+Rendered projects/_attachment_fields.html.erb (2.0ms)
+Rendered projects/_attachment_fields.html.erb (1.0ms)
+Rendered projects/_form.html.erb (28.0ms)
+Rendered projects/new.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 120ms (Views: 50.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-15 12:51:21 -0500
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-15 12:51:21 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-15 12:51:21 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 12:51:21 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2011-11-15 12:51:21 -0500
+Served asset /jquery-ui.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2011-11-15 12:51:21 -0500
+Served asset /jquery.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2011-11-15 12:51:21 -0500
+Served asset /jquery.tokeninput.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-15 12:51:21 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/nested_form.js?body=1" for 127.0.0.1 at 2011-11-15 12:51:21 -0500
+Served asset /nested_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2011-11-15 12:52:40 -0500
+  Processing by ProjectsController#new as HTML
+Rendered projects/_form.html.erb (115.0ms)
+Rendered projects/new.html.erb within layouts/application (119.0ms)
+Completed 200 OK in 140ms (Views: 140.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-15 12:52:41 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 12:52:41 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-15 12:52:41 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-15 12:52:41 -0500
+Served asset /jquery-ui.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2011-11-15 12:52:41 -0500
+Served asset /jquery.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2011-11-15 12:52:41 -0500
+Served asset /jquery-ui.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2011-11-15 12:52:41 -0500
+Served asset /jquery.tokeninput.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nested_form.js?body=1" for 127.0.0.1 at 2011-11-15 12:52:41 -0500
+Served asset /nested_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-15 12:52:41 -0500
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2011-11-15 12:53:16 -0500
+  Processing by ProjectsController#new as HTML
+Rendered projects/_form.html.erb (26.0ms)
+Rendered projects/new.html.erb within layouts/application (36.0ms)
+Completed 200 OK in 54ms (Views: 53.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 12:53:16 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-15 12:53:16 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-15 12:53:16 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-15 12:53:16 -0500
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2011-11-15 12:53:16 -0500
+Served asset /jquery-ui.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2011-11-15 12:53:16 -0500
+Served asset /jquery.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2011-11-15 12:53:16 -0500
+Served asset /jquery.tokeninput.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nested_form.js?body=1" for 127.0.0.1 at 2011-11-15 12:53:16 -0500
+Served asset /nested_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-15 12:53:16 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2011-11-15 12:53:33 -0500
+  Processing by ProjectsController#new as HTML
+Rendered projects/_form.html.erb (26.0ms)
+Rendered projects/new.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 50ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-15 12:53:34 -0500
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-15 12:53:34 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-15 12:53:34 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 12:53:34 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2011-11-15 12:53:34 -0500
+Served asset /jquery-ui.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2011-11-15 12:53:34 -0500
+Served asset /jquery.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-15 12:53:34 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/nested_form.js?body=1" for 127.0.0.1 at 2011-11-15 12:53:34 -0500
+Served asset /nested_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2011-11-15 12:53:34 -0500
+Served asset /jquery.tokeninput.js - 304 Not Modified (1ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2011-11-15 12:54:04 -0500
+  Processing by ProjectsController#new as HTML
+Rendered projects/_form.html.erb (28.0ms)
+Rendered projects/new.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 51ms (Views: 49.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 12:54:04 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-15 12:54:04 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-15 12:54:04 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-15 12:54:04 -0500
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2011-11-15 12:54:04 -0500
+Served asset /jquery-ui.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2011-11-15 12:54:04 -0500
+Served asset /jquery.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2011-11-15 12:54:04 -0500
+Served asset /jquery.tokeninput.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nested_form.js?body=1" for 127.0.0.1 at 2011-11-15 12:54:05 -0500
+Served asset /nested_form.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-15 12:54:05 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2011-11-15 13:05:06 -0500
+  Processing by ProjectsController#new as HTML
+Rendered projects/_form.html.erb (96.0ms)
+Rendered projects/new.html.erb within layouts/application (99.0ms)
+Completed 500 Internal Server Error in 112ms
+
+ActionView::Template::Error (Missing partial projects/skills_checkboxes, application/skills_checkboxes with {:handlers=>[:erb, :builder, :coffee], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "c:/Users/Owner/team_04/app/views"
+):
+    3:   
+    4:   
+    5:   <!-- ******Skill checkboxes******** -->
+    6:   	<%= render :partial => 'skills_checkboxes' %>
+    7:   <!-- ************************************* -->
+    8:   
+    9:   
+  app/views/projects/_form.html.erb:6:in `block in _app_views_projects__form_html_erb___1030693697_38720604'
+  app/views/projects/_form.html.erb:1:in `_app_views_projects__form_html_erb___1030693697_38720604'
+  app/views/projects/new.html.erb:3:in `_app_views_projects_new_html_erb___711120117_37603428'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.0ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2011-11-15 13:06:17 -0500
+  Processing by ProjectsController#new as HTML
+Rendered projects/_skill_checkboxes.html.erb (4.0ms)
+Rendered projects/_form.html.erb (41.0ms)
+Rendered projects/new.html.erb within layouts/application (46.0ms)
+Completed 500 Internal Server Error in 60ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+    1: <div id='skill_checkboxes'>
+    2: 	<h3>Necessary Skills</h3>
+    3: 	  <% for skill in @skills  %>
+    4: 	   <%= check_box_tag "project[skill_ids][]", skill.id, @project.skills.include?(skill) %>
+    5: 		 <%= skill.name %>
+    6: 	   <br />
+  app/views/projects/_skill_checkboxes.html.erb:3:in `_app_views_projects__skill_checkboxes_html_erb___406181142_35521524'
+  app/views/projects/_form.html.erb:6:in `block in _app_views_projects__form_html_erb___1030693697_37127232'
+  app/views/projects/_form.html.erb:1:in `_app_views_projects__form_html_erb___1030693697_37127232'
+  app/views/projects/new.html.erb:3:in `_app_views_projects_new_html_erb___711120117_37603428'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (62.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (72.0ms)
+
+
+Started GET "/sections" for 127.0.0.1 at 2011-11-15 13:06:28 -0500
+
+ActionController::RoutingError (No route matches [GET] "/sections"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/skills" for 127.0.0.1 at 2011-11-15 13:06:28 -0500
+  Processing by SkillsController#index as HTML
+  [1m[36mSkill Load (0.0ms)[0m  [1mSELECT "skills".* FROM "skills" [0m
+Rendered skills/index.html.erb within layouts/application (40.0ms)
+Completed 200 OK in 61ms (Views: 58.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 13:06:28 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-15 13:06:28 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-15 13:06:28 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-15 13:06:28 -0500
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2011-11-15 13:06:28 -0500
+Served asset /jquery-ui.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2011-11-15 13:06:28 -0500
+Served asset /jquery.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2011-11-15 13:06:28 -0500
+Served asset /jquery.tokeninput.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/nested_form.js?body=1" for 127.0.0.1 at 2011-11-15 13:06:28 -0500
+Served asset /nested_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-15 13:06:28 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/skills/new" for 127.0.0.1 at 2011-11-15 13:06:30 -0500
+  Processing by SkillsController#new as HTML
+Rendered skills/_form.html.erb (11.0ms)
+Rendered skills/new.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 33ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2011-11-15 13:06:30 -0500
+Served asset /jquery-ui.min.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-15 13:06:30 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2011-11-15 13:06:30 -0500
+Served asset /jquery.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-15 13:06:30 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 13:06:30 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-15 13:06:30 -0500
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2011-11-15 13:06:30 -0500
+Served asset /jquery.tokeninput.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/nested_form.js?body=1" for 127.0.0.1 at 2011-11-15 13:06:30 -0500
+Served asset /nested_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-15 13:06:30 -0500
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2011-11-15 13:06:39 -0500
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.0ms)[0m  SELECT "projects".* FROM "projects" 
+Rendered projects/index.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 75ms (Views: 72.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2011-11-15 13:06:39 -0500
+Served asset /jquery-ui.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-15 13:06:39 -0500
+Served asset /jquery-ui.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2011-11-15 13:06:39 -0500
+Served asset /jquery.tokeninput.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2011-11-15 13:06:39 -0500
+Served asset /jquery.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-15 13:06:39 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-15 13:06:39 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-15 13:06:39 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nested_form.js?body=1" for 127.0.0.1 at 2011-11-15 13:06:39 -0500
+Served asset /nested_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-15 13:06:39 -0500
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2011-11-15 13:06:41 -0500
+  Processing by ProjectsController#new as HTML
+Rendered projects/_skill_checkboxes.html.erb (2.0ms)
+Rendered projects/_form.html.erb (22.0ms)
+Rendered projects/new.html.erb within layouts/application (25.0ms)
+Completed 500 Internal Server Error in 40ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+    1: <div id='skill_checkboxes'>
+    2: 	<h3>Necessary Skills</h3>
+    3: 	  <% for skill in @skills  %>
+    4: 	   <%= check_box_tag "project[skill_ids][]", skill.id, @project.skills.include?(skill) %>
+    5: 		 <%= skill.name %>
+    6: 	   <br />
+  app/views/projects/_skill_checkboxes.html.erb:3:in `_app_views_projects__skill_checkboxes_html_erb___406181142_35521524'
+  app/views/projects/_form.html.erb:6:in `block in _app_views_projects__form_html_erb___1030693697_37127232'
+  app/views/projects/_form.html.erb:1:in `_app_views_projects__form_html_erb___1030693697_37127232'
+  app/views/projects/new.html.erb:3:in `_app_views_projects_new_html_erb___711120117_37603428'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.0ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2011-11-15 13:08:02 -0500
+  Processing by ProjectsController#new as HTML
+Rendered projects/_skill_checkboxes.html.erb (3.0ms)
+Rendered projects/_form.html.erb (80.0ms)
+Rendered projects/new.html.erb within layouts/application (83.0ms)
+Completed 500 Internal Server Error in 100ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+    1: <div id='skill_checkboxes'>
+    2: 	<h3>Necessary Skills</h3>
+    3: 	  <% for skill in @skills  %>
+    4: 	   <%= check_box_tag "project[skill_ids][]", skill.id, @project.skills.include?(skill) %>
+    5: 		 <%= skill.name %>
+    6: 	   <br />
+  app/views/projects/_skill_checkboxes.html.erb:3:in `_app_views_projects__skill_checkboxes_html_erb___406181142_35521524'
+  app/views/projects/_form.html.erb:6:in `block in _app_views_projects__form_html_erb___1030693697_37127232'
+  app/views/projects/_form.html.erb:1:in `_app_views_projects__form_html_erb___1030693697_37127232'
+  app/views/projects/new.html.erb:3:in `_app_views_projects_new_html_erb___711120117_37603428'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.0ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2011-11-15 13:08:05 -0500
+  Processing by ProjectsController#new as HTML
+Rendered projects/_skill_checkboxes.html.erb (3.0ms)
+Rendered projects/_form.html.erb (18.0ms)
+Rendered projects/new.html.erb within layouts/application (21.0ms)
+Completed 500 Internal Server Error in 36ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+    1: <div id='skill_checkboxes'>
+    2: 	<h3>Necessary Skills</h3>
+    3: 	  <% for skill in @skills  %>
+    4: 	   <%= check_box_tag "project[skill_ids][]", skill.id, @project.skills.include?(skill) %>
+    5: 		 <%= skill.name %>
+    6: 	   <br />
+  app/views/projects/_skill_checkboxes.html.erb:3:in `_app_views_projects__skill_checkboxes_html_erb___406181142_35521524'
+  app/views/projects/_form.html.erb:6:in `block in _app_views_projects__form_html_erb___1030693697_37127232'
+  app/views/projects/_form.html.erb:1:in `_app_views_projects__form_html_erb___1030693697_37127232'
+  app/views/projects/new.html.erb:3:in `_app_views_projects_new_html_erb___711120117_37603428'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.0ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2011-11-15 13:35:59 -0500
+  Processing by ProjectsController#new as HTML
+Rendered projects/_skill_checkboxes.html.erb (3.0ms)
+Rendered projects/_form.html.erb (20.0ms)
+Rendered projects/new.html.erb within layouts/application (22.0ms)
+Completed 500 Internal Server Error in 37ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+    1: <div id='skill_checkboxes'>
+    2: 	<h3>Necessary Skills</h3>
+    3: 	  <% for skill in @skills  %>
+    4: 	   <%= check_box_tag "project[skill_ids][]", skill.id, @project.skills.include?(skill) %>
+    5: 		 <%= skill.name %>
+    6: 	   <br />
+  app/views/projects/_skill_checkboxes.html.erb:3:in `_app_views_projects__skill_checkboxes_html_erb___406181142_35521524'
+  app/views/projects/_form.html.erb:6:in `block in _app_views_projects__form_html_erb___1030693697_37127232'
+  app/views/projects/_form.html.erb:1:in `_app_views_projects__form_html_erb___1030693697_37127232'
+  app/views/projects/new.html.erb:3:in `_app_views_projects_new_html_erb___711120117_37603428'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.0ms)

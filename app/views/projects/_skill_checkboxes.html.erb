@@ -1,0 +1,8 @@
+<div id='skill_checkboxes'>
+	<h3>Necessary Skills</h3>
+	  <% for skill in @skills  %>
+	   <%= check_box_tag "project[skill_ids][]", skill.id, @project.skills.include?(skill) %>
+		 <%= skill.name %>
+	   <br />
+	<% end  %>
+</div>

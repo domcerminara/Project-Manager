@@ -1,5 +1,15 @@
 <% title "Project" %>
 
+
+<div class="attachment">
+	<strong>Project Documents:</strong>
+	<ol>
+		<% for attachment in @attachments %>
+			<li><%= link_to attachment.filename, attachment_path(attachment) %></li>
+		<% end %>
+	</ol>
+</div>
+
 <p>
   <strong>Name:</strong>
   <%= @project.name %>

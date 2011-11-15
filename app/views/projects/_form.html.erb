@@ -1,20 +1,32 @@
 <%= form_for @project do |f| %>
   <%= f.error_messages %>
+  
+  
+  <!-- ******Skill checkboxes******** -->
+  	<%= render :partial => 'skill_checkboxes' %>
+  <!-- ************************************* -->
+  
+  
+  
+  
+  <!-- ******Nested attachment form******** -->
+  
+  
+  
+  <!-- ************************************* -->
+  
+  
   <p>
     <%= f.label :name %><br />
     <%= f.text_field :name %>
   </p>
   <p>
     <%= f.label :description %><br />
-    <%= f.text_area :description %>
+    <%= f.text_area :description, :rows => 4, :cols => 35 %>
   </p>
   <p>
     <%= f.label :team_size %><br />
     <%= f.number_field :team_size %>
-  </p>
-  <p>
-    <%= f.label :creator_id %><br />
-    <%= f.number_field :creator_id %>
   </p>
   <p>
     <%= f.label :start_date %><br />
@@ -32,9 +44,6 @@
     <%= f.label :photo %><br />
     <%= f.text_field :photo %>
   </p>
-  <p>
-    <%= f.label :active %><br />
-    <%= f.text_field :active %>
-  </p>
+  
   <p><%= f.submit %></p>
 <% end %>
