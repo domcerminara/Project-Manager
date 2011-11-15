@@ -1,3 +1,6 @@
+<% unless @project.photo_url.nil? %>
+	<%= image_tag @project.photo_url %>
+<% end %>
 <% title "#{@project.name}" %>
 
 
@@ -30,10 +33,6 @@
 <p>
   <strong>Work Commitment:</strong>
   <%= @project.hours_per_week %> hrs/week
-</p>
-<p>
-  <strong>Project Logo:</strong>
-  <%= @project.photo %>
 </p>
 <p>
   <strong>Status:</strong>

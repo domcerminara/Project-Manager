@@ -21,7 +21,7 @@ class ProjectsController < ApplicationController
 
   def create
     @project = Project.new(params[:project])
-    
+    @skills = Skill.all
     if current_user
     	@project.creator_id = current_user.id
 	end

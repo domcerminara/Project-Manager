@@ -9,6 +9,10 @@ class Project < ActiveRecord::Base
   has_many :skills, :through => :project_skills
   has_many :attachments
   
+  # Photo Uploader
+  # ----------------------------
+	mount_uploader :photo, PhotoUploader
+  
   # Nested Attributes
   # ----------------------------
   #accepts_nested_attributes_for :attachments, :reject_if => lambda { |attachment| attachment[:name].blank? || attachment[:filename].blank? }
@@ -18,6 +22,7 @@ class Project < ActiveRecord::Base
   validates_presence_of :name, :description
   validates_numericality_of :team_size, :hours_per_week
   validates_date :start_date, :on_or_before => lambda { :end_date }, :on_or_before_message => "must be on or before end date"
+  validates_date :start_date, :on_or_after => lambda { Date.current }, :on_or_after_message => "can't be before today"
 	
   # Constants
   # ----------------------------
