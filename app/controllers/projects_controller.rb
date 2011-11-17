@@ -7,7 +7,7 @@ class ProjectsController < ApplicationController
   def show
     @project = Project.find(params[:id])
     #@attachments = @project.attachments
-    @skills = Skill.all
+    @skills = @project.skills
   end
 
   def new
@@ -40,6 +40,7 @@ class ProjectsController < ApplicationController
 
   def update
     @project = Project.find(params[:id])
+    @skills = Skill.all
     if @project.update_attributes(params[:project])
       redirect_to @project, :notice  => "Successfully updated project."
     else
