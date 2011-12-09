@@ -12,6 +12,9 @@
   <strong>Description:</strong>
   <%= @skill.description %>
 </p>
+<p>
+  <%= button_to "Add This Skill To Your Inventory", { :action => "index", :controller => 'user_skill', :user_id => current_user.id, :skill_id => @skill.id }, :method => "create" %> 
+</p>
 
 <p>
   <%= link_to "Edit", edit_skill_path(@skill) %> |

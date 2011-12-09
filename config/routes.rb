@@ -17,6 +17,8 @@ Team04::Application.routes.draw do
 
   resources :projects
   
+  resources :user_skill
+  
   
   #-----------
   #Site root and paths

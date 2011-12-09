@@ -1,0 +1,2 @@
+module UserSkillHelper
+end
