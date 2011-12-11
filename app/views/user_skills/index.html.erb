@@ -1,0 +1,18 @@
+<% title "User Skills" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Level</th>
+    <th>Description</th>
+  </tr>
+  <% for user_skill in @user_skills %>
+    <tr>
+      <td><%= user_skill.skill.name %></td>
+      <td><%= user_skill.skill.level %></td>
+      <td><%= user_skill.skill.description %></td>
+      <td><%= link_to "Show", user_skill %></td>
+      <td><%= link_to "Destroy", user_skill, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>

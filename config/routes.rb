@@ -17,7 +17,7 @@ Team04::Application.routes.draw do
 
   resources :projects
   
-  resources :user_skill
+  resources :user_skills
   
   
   #-----------
