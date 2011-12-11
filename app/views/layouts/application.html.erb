@@ -20,7 +20,8 @@
     			<% if current_user %>
     			<li><%= link_to 'projects', projects_path %></li>
     			<li><%= link_to 'skills', skills_path %></li>
-          <li><%= link_to 'user skills inventory', user_skills_path %></li>
+          <li><%= link_to 'user skills', user_skills_path %></li>
+          <li><%= link_to 'user projects', user_projects_path %></li>
     			<li><%= link_to 'logout', logout_path %></li>
     			<% end %>
     		</ul>

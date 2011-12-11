@@ -1,0 +1,34 @@
+<% title "#{@user_project.project.name}" %>
+
+<p>
+  <strong>Description:</strong>
+  <%= @user_project.project.description %>
+</p>  
+<p>
+  <strong>Team Size:</strong>
+  <%= @user_project.project.team_size %>
+</p>
+<p>
+  <strong>Project Creator:</strong>
+  <%= @user_project.project.creator.name %>
+</p>
+<p>
+  <strong>Duration:</strong>
+  <%= @user_project.project.start_date.strftime("%b %d, %Y") %> - <%= @user_project.project.end_date.strftime("%b %d, %Y") %>
+</p>
+<p>
+  <strong>Work Commitment:</strong>
+  <%= @user_project.project.hours_per_week %> hrs/week
+</p>
+<p>
+  <strong>Status:</strong>
+  <% if @user_project.project.active %>
+  	<span class='active'>active</span>
+  <% else %>
+  	<span class='closed'>closed</span>
+  <% end %>
+</p>
+<p>
+  <%= link_to "Destroy", @user_project, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", user_projects_path %>
+</p>

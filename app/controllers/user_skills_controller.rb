@@ -18,7 +18,7 @@ def new
 end
 
 def index
-  @user_skills = UserSkill.all
+  @user_skills = current_user.user_skills.all
 end
 
 def show
@@ -28,7 +28,7 @@ end
 def destroy
   @user_skill = UserSkill.find(params[:id])
   @user_skill.destroy
-  redirect_to user_skills_url, :notice => "Successfully destroyed skill."
+  redirect_to user_skills_url, :notice => "Successfully destroyed user skill."
 end
 
 
