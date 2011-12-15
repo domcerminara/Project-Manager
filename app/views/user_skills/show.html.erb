@@ -1,0 +1,19 @@
+<% title "User Skill" %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @user_skill.skill.name %>
+</p>
+<p>
+  <strong>Level:</strong>
+  <%= @user_skill.skill.level %>
+</p>
+<p>
+  <strong>Description:</strong>
+  <%= @user_skill.skill.description %>
+</p>
+
+<p>
+  <%= link_to "Destroy", @user_skill, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", user_skills_path %>
+</p>

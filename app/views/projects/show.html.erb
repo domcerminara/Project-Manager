@@ -43,6 +43,32 @@
   <% end %>
 </p>
 <p>
+  <strong>Team Members:</strong>
+  <table>
+    <% for user_project in @project.user_projects %>
+      <tr>
+        <td><%= user_project.user.name %></td>
+      </tr>
+    <% end %>
+  </table>
+</p>
+<% @test = false %>
+<% for user_skill in current_user.user_skills %>
+  <% for skill in @project.skills %>
+    <% if user_skill.skill.name == skill.name && user_skill.skill.level >= skill.level %>
+      <% @test = true %>
+      <% break %>
+    <% end %>
+  <% end %>
+<% end %>
+<% if @test == true %>
+  <p>
+    <%= button_to "Join This Project", { :action => "index", :controller => 'user_projects', :user_id => current_user.id, :project_id => @project.id }, :method => "create" %> 
+  </p>
+<% else %>
+  <p>You are not eligible for this project!</p>
+<% end %>
+<p>
   <%= link_to "Edit", edit_project_path(@project) %> |
   <%= link_to "Destroy", @project, :confirm => 'Are you sure?', :method => :delete %> |
   <%= link_to "View All", projects_path %>

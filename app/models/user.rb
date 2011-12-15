@@ -10,7 +10,7 @@ class User < ActiveRecord::Base
   #---------------------------
   has_many :user_skills
   has_many :skills, :through => :user_skills
-  has_many :user_pojects
+  has_many :user_projects
   has_many :projects, :through => :user_projects
   
 
@@ -28,7 +28,11 @@ class User < ActiveRecord::Base
   
   # the name of the user
   def name
-  	first_name + " " + last_name
+    if first_name == nil && last_name == nil
+      username
+    else
+  	  first_name + " " + last_name
+  	end
   end
 
   # login can be either username or email address

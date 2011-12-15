@@ -1,4 +1,4 @@
-o: ActiveSupport::Cache::Entry	:@expires_in0:@value{	"_version"%1e70f2ee1e84069408aa68bebcf43e11"digest"%f136a2fb6be23daeabf8f8699a24d033"lengthi-L"source"-L/*!
+o: ActiveSupport::Cache::Entry	:@expires_in0:@value{	"_version"%3eae20323b443273a6f197db4fb81619"digest"%7d16d695d3b1466c09f41e84d242cecb"lengthi¬L"source"¬L/*!
  * jQuery JavaScript Library v1.6.1
  * http://jquery.com/
  *
@@ -22129,6 +22129,9 @@ jQuery(function($) {
 // Place all the behaviors and hooks related to the matching controller here.
 // All this logic will automatically be available in application.js.
 ;
+// Place all the behaviors and hooks related to the matching controller here.
+// All this logic will automatically be available in application.js.
+;
 // This is a manifest file that'll be compiled into including all the files listed below.
 // Add new JavaScript/Coffee code in separate files in this directory and they'll automatically
 // be included in the compiled file accessible from http://example.com/assets/application.js
@@ -22136,4 +22139,4 @@ jQuery(function($) {
 // the compiled file.
 //
 ;
-:@compressedF:@created_atf1323634259.0723519 °j
+:@compressedF:@created_atf1323818231.4929941 ç7

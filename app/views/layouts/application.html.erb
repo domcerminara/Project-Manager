@@ -18,8 +18,10 @@
     	<div id='menu'>
     		<ul>
     			<% if current_user %>
-    			<li><%= link_to 'projects', projects_path %></li>
-    			<li><%= link_to 'skills', skills_path %></li>
+    			<li><%= link_to 'Projects', projects_path %></li>
+    			<li><%= link_to 'Skills', skills_path %></li>
+          <li><%= link_to 'My Skills', user_skills_path %></li>
+          <li><%= link_to 'My Projects', user_projects_path %></li>
     			<li><%= link_to 'logout', logout_path %></li>
     			<% end %>
     		</ul>

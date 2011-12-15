@@ -1,0 +1,16 @@
+<% title "User Projects" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+  <% for user_project in @user_projects %>
+    <tr>
+      <td><%= user_project.project.name %></td>
+      <td><%= user_project.project.description %></td>
+      <td><%= link_to "Show", user_project %></td>
+      <td><%= link_to "Destroy", user_project, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>

@@ -1,0 +1,990 @@
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "attachments"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "project_skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 298486374, 1, 1, 1, 'MyText', '2011-11-14', NULL)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 980190962, 1, 1, 1, 'MyText', '2011-11-14', NULL)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374, 'MyText')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962, 'MyText')
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "user_projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374, 1)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962, 1)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)[0m
+SQLite3::SQLException: table user_skills has no column named project_id: INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "attachments"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "project_skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 298486374, 1, 1, 1, 'MyText', '2011-11-14', NULL)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 980190962, 1, 1, 1, 'MyText', '2011-11-14', NULL)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374, 'MyText')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962, 'MyText')[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374, 1)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962, 1)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "user_skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)
+SQLite3::SQLException: table user_skills has no column named project_id: INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "attachments"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "project_skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 298486374, 1, 1, 1, 'MyText', '2011-11-14', NULL)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 980190962, 1, 1, 1, 'MyText', '2011-11-14', NULL)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374, 'MyText')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962, 'MyText')
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "user_projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374, 1)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962, 1)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "user_skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)[0m
+SQLite3::SQLException: table user_skills has no column named project_id: INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)
+  [1m[35mFixture Delete (0.4ms)[0m  DELETE FROM "attachments"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "project_skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "projects"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 298486374, 1, 1, 1, 'MyText', '2011-11-14', NULL)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 980190962, 1, 1, 1, 'MyText', '2011-11-14', NULL)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374, 'MyText')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962, 'MyText')[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "user_projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374, 1)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962, 1)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "user_skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)
+SQLite3::SQLException: table user_skills has no column named project_id: INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "attachments"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "project_skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 298486374, 1, 1, 1, 'MyText', '2011-11-14', NULL)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 980190962, 1, 1, 1, 'MyText', '2011-11-14', NULL)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374, 'MyText')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962, 'MyText')
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "user_projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374, 1)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962, 1)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "user_skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)[0m
+SQLite3::SQLException: table user_skills has no column named project_id: INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "attachments"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "project_skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 298486374, 1, 1, 1, 'MyText', '2011-11-14', NULL)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 980190962, 1, 1, 1, 'MyText', '2011-11-14', NULL)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374, 'MyText')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962, 'MyText')[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374, 1)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962, 1)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "user_skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)
+SQLite3::SQLException: table user_skills has no column named project_id: INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "attachments"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "project_skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 298486374, 1, 1, 1, 'MyText', '2011-11-14', NULL)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 980190962, 1, 1, 1, 'MyText', '2011-11-14', NULL)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374, 'MyText')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962, 'MyText')
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "user_projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374, 1)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962, 1)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)[0m
+SQLite3::SQLException: table user_skills has no column named project_id: INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "attachments"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "project_skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 298486374, 1, 1, 1, 'MyText', '2011-11-14', NULL)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 980190962, 1, 1, 1, 'MyText', '2011-11-14', NULL)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374, 'MyText')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962, 'MyText')[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374, 1)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962, 1)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "user_skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)
+SQLite3::SQLException: table user_skills has no column named project_id: INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "attachments"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "project_skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 298486374, 1, 1, 1, 'MyText', '2011-11-14', NULL)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 980190962, 1, 1, 1, 'MyText', '2011-11-14', NULL)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374, 'MyText')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962, 'MyText')
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "user_projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374, 1)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962, 1)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "user_skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)[0m
+SQLite3::SQLException: table user_skills has no column named project_id: INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "attachments"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "project_skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 298486374, 1, 1, 1, 'MyText', '2011-11-14', NULL)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 980190962, 1, 1, 1, 'MyText', '2011-11-14', NULL)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374, 'MyText')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962, 'MyText')[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374, 1)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962, 1)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "user_skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)
+SQLite3::SQLException: table user_skills has no column named project_id: INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "attachments"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "project_skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 298486374, 1, 1, 1, 'MyText', '2011-11-14', NULL)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 980190962, 1, 1, 1, 'MyText', '2011-11-14', NULL)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374, 'MyText')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962, 'MyText')
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "user_projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374, 1)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962, 1)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "user_skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)[0m
+SQLite3::SQLException: table user_skills has no column named project_id: INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "attachments"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "project_skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 298486374, 1, 1, 1, 'MyText', '2011-11-14', NULL)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 980190962, 1, 1, 1, 'MyText', '2011-11-14', NULL)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374, 'MyText')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962, 'MyText')[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374, 1)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962, 1)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "user_skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)
+SQLite3::SQLException: table user_skills has no column named project_id: INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "attachments"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "project_skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 298486374, 1, 1, 1, 'MyText', '2011-11-14', NULL)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 980190962, 1, 1, 1, 'MyText', '2011-11-14', NULL)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374, 'MyText')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962, 'MyText')
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "user_projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374, 1)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962, 1)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "user_skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)[0m
+SQLite3::SQLException: table user_skills has no column named project_id: INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "attachments"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "project_skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 298486374, 1, 1, 1, 'MyText', '2011-11-14', NULL)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 980190962, 1, 1, 1, 'MyText', '2011-11-14', NULL)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374, 'MyText')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962, 'MyText')[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374, 1)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962, 1)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "user_skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)
+SQLite3::SQLException: table user_skills has no column named project_id: INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "attachments"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "project_skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 298486374, 1, 1, 1, 'MyText', '2011-11-14', NULL)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 980190962, 1, 1, 1, 'MyText', '2011-11-14', NULL)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374, 'MyText')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962, 'MyText')
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "user_projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374, 1)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962, 1)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "user_skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)[0m
+SQLite3::SQLException: table user_skills has no column named project_id: INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "attachments"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "project_skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 298486374, 1, 1, 1, 'MyText', '2011-11-14', NULL)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 980190962, 1, 1, 1, 'MyText', '2011-11-14', NULL)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374, 'MyText')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962, 'MyText')[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374, 1)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962, 1)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "user_skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)
+SQLite3::SQLException: table user_skills has no column named project_id: INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "attachments"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "project_skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 298486374, 1, 1, 1, 'MyText', '2011-11-14', NULL)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 980190962, 1, 1, 1, 'MyText', '2011-11-14', NULL)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374, 'MyText')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962, 'MyText')
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "user_projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374, 1)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 980190962, 1)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "user_skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)[0m
+SQLite3::SQLException: table user_skills has no column named project_id: INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:26', '2011-12-15 00:05:26', 1, 298486374)
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "attachments"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 980190962)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "project_skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 980190962)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:28', '2011-12-15 00:05:28', 298486374, 1, 1, 1, 'MyText', '2011-11-14', NULL)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:28', '2011-12-15 00:05:28', 980190962, 1, 1, 1, 'MyText', '2011-11-14', NULL)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 298486374, 'MyText')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 980190962, 'MyText')
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "user_projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 298486374, 1)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 980190962, 1)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 298486374)[0m
+SQLite3::SQLException: table user_skills has no column named project_id: INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 298486374)
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "attachments"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 980190962)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "project_skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 980190962)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:28', '2011-12-15 00:05:28', 298486374, 1, 1, 1, 'MyText', '2011-11-14', NULL)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:28', '2011-12-15 00:05:28', 980190962, 1, 1, 1, 'MyText', '2011-11-14', NULL)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 298486374, 'MyText')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 980190962, 'MyText')[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 298486374, 1)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 980190962, 1)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "user_skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 298486374)
+SQLite3::SQLException: table user_skills has no column named project_id: INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "attachments"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 980190962)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "project_skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 980190962)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:28', '2011-12-15 00:05:28', 298486374, 1, 1, 1, 'MyText', '2011-11-14', NULL)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:28', '2011-12-15 00:05:28', 980190962, 1, 1, 1, 'MyText', '2011-11-14', NULL)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 298486374, 'MyText')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 980190962, 'MyText')
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "user_projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 298486374, 1)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 980190962, 1)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "user_skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 298486374)[0m
+SQLite3::SQLException: table user_skills has no column named project_id: INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 298486374)
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "attachments"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 980190962)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "project_skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 980190962)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:28', '2011-12-15 00:05:28', 298486374, 1, 1, 1, 'MyText', '2011-11-14', NULL)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:28', '2011-12-15 00:05:28', 980190962, 1, 1, 1, 'MyText', '2011-11-14', NULL)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 298486374, 'MyText')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 980190962, 'MyText')[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 298486374, 1)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 980190962, 1)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "user_skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 298486374)
+SQLite3::SQLException: table user_skills has no column named project_id: INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "attachments"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 980190962)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "project_skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 980190962)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:28', '2011-12-15 00:05:28', 298486374, 1, 1, 1, 'MyText', '2011-11-14', NULL)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:28', '2011-12-15 00:05:28', 980190962, 1, 1, 1, 'MyText', '2011-11-14', NULL)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 298486374, 'MyText')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 980190962, 'MyText')
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "user_projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 298486374, 1)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 980190962, 1)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "user_skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 298486374)[0m
+SQLite3::SQLException: table user_skills has no column named project_id: INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 298486374)
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "attachments"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 980190962)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "project_skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 980190962)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:28', '2011-12-15 00:05:28', 298486374, 1, 1, 1, 'MyText', '2011-11-14', NULL)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:28', '2011-12-15 00:05:28', 980190962, 1, 1, 1, 'MyText', '2011-11-14', NULL)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 298486374, 'MyText')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 980190962, 'MyText')[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 298486374, 1)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 980190962, 1)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "user_skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 298486374)
+SQLite3::SQLException: table user_skills has no column named project_id: INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "attachments"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 980190962)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "project_skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 980190962)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:28', '2011-12-15 00:05:28', 298486374, 1, 1, 1, 'MyText', '2011-11-14', NULL)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:28', '2011-12-15 00:05:28', 980190962, 1, 1, 1, 'MyText', '2011-11-14', NULL)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 298486374, 'MyText')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 980190962, 'MyText')
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "user_projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 298486374, 1)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 980190962, 1)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 298486374)[0m
+SQLite3::SQLException: table user_skills has no column named project_id: INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 298486374)
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "attachments"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 980190962)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "project_skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 980190962)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:28', '2011-12-15 00:05:28', 298486374, 1, 1, 1, 'MyText', '2011-11-14', NULL)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:28', '2011-12-15 00:05:28', 980190962, 1, 1, 1, 'MyText', '2011-11-14', NULL)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 298486374, 'MyText')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:28', '2011-12-15 00:05:28', 1, 980190962, 'MyText')[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 1)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 1)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "user_skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+SQLite3::SQLException: table user_skills has no column named project_id: INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "attachments"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "project_skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 298486374, 1, 1, 1, 'MyText', '2011-11-14', NULL)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 980190962, 1, 1, 1, 'MyText', '2011-11-14', NULL)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 'MyText')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 'MyText')
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "user_projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 1)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 1)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)[0m
+SQLite3::SQLException: table user_skills has no column named project_id: INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "attachments"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "project_skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 298486374, 1, 1, 1, 'MyText', '2011-11-14', NULL)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 980190962, 1, 1, 1, 'MyText', '2011-11-14', NULL)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 'MyText')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 'MyText')[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 1)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 1)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "user_skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+SQLite3::SQLException: table user_skills has no column named project_id: INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "attachments"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "project_skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 298486374, 1, 1, 1, 'MyText', '2011-11-14', NULL)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 980190962, 1, 1, 1, 'MyText', '2011-11-14', NULL)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 'MyText')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 'MyText')
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "user_projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 1)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 1)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "user_skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)[0m
+SQLite3::SQLException: table user_skills has no column named project_id: INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "attachments"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "project_skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 298486374, 1, 1, 1, 'MyText', '2011-11-14', NULL)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 980190962, 1, 1, 1, 'MyText', '2011-11-14', NULL)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 'MyText')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 'MyText')[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 1)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 1)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "user_skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+SQLite3::SQLException: table user_skills has no column named project_id: INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "attachments"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "project_skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 298486374, 1, 1, 1, 'MyText', '2011-11-14', NULL)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 980190962, 1, 1, 1, 'MyText', '2011-11-14', NULL)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 'MyText')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 'MyText')
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "user_projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 1)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 1)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "user_skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)[0m
+SQLite3::SQLException: table user_skills has no column named project_id: INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "attachments"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "project_skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 298486374, 1, 1, 1, 'MyText', '2011-11-14', NULL)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 980190962, 1, 1, 1, 'MyText', '2011-11-14', NULL)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 'MyText')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 'MyText')[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 1)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 1)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "user_skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+SQLite3::SQLException: table user_skills has no column named project_id: INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "attachments"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "project_skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 298486374, 1, 1, 1, 'MyText', '2011-11-14', NULL)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 980190962, 1, 1, 1, 'MyText', '2011-11-14', NULL)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 'MyText')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 'MyText')
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "user_projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 1)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 1)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "user_skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)[0m
+SQLite3::SQLException: table user_skills has no column named project_id: INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "attachments"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "project_skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 298486374, 1, 1, 1, 'MyText', '2011-11-14', NULL)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 980190962, 1, 1, 1, 'MyText', '2011-11-14', NULL)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 'MyText')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 'MyText')[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 1)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 1)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "user_skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+SQLite3::SQLException: table user_skills has no column named project_id: INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "attachments"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "project_skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 298486374, 1, 1, 1, 'MyText', '2011-11-14', NULL)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 980190962, 1, 1, 1, 'MyText', '2011-11-14', NULL)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 'MyText')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 'MyText')
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "user_projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 1)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 1)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "user_skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)[0m
+SQLite3::SQLException: table user_skills has no column named project_id: INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "attachments"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "project_skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 298486374, 1, 1, 1, 'MyText', '2011-11-14', NULL)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 980190962, 1, 1, 1, 'MyText', '2011-11-14', NULL)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 'MyText')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 'MyText')[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 1)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 1)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "user_skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+SQLite3::SQLException: table user_skills has no column named project_id: INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "attachments"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "project_skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 298486374, 1, 1, 1, 'MyText', '2011-11-14', NULL)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 980190962, 1, 1, 1, 'MyText', '2011-11-14', NULL)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 'MyText')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 'MyText')
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "user_projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 1)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 1)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "user_skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)[0m
+SQLite3::SQLException: table user_skills has no column named project_id: INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "attachments"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "project_skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 298486374, 1, 1, 1, 'MyText', '2011-11-14', NULL)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 980190962, 1, 1, 1, 'MyText', '2011-11-14', NULL)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 'MyText')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 'MyText')[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 1)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 1)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "user_skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+SQLite3::SQLException: table user_skills has no column named project_id: INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "attachments"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "project_skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 298486374, 1, 1, 1, 'MyText', '2011-11-14', NULL)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 980190962, 1, 1, 1, 'MyText', '2011-11-14', NULL)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 'MyText')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 'MyText')
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "user_projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 1)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 1)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "user_skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)[0m
+SQLite3::SQLException: table user_skills has no column named project_id: INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "attachments"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "project_skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 298486374, 1, 1, 1, 'MyText', '2011-11-14', NULL)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 980190962, 1, 1, 1, 'MyText', '2011-11-14', NULL)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 'MyText')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 'MyText')[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 1)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 1)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "user_skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+SQLite3::SQLException: table user_skills has no column named project_id: INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "attachments"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "project_skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 298486374, 1, 1, 1, 'MyText', '2011-11-14', NULL)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 980190962, 1, 1, 1, 'MyText', '2011-11-14', NULL)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 'MyText')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 'MyText')
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "user_projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 1)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 1)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "user_skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)[0m
+SQLite3::SQLException: table user_skills has no column named project_id: INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "attachments"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "project_skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 298486374, 1, 1, 1, 'MyText', '2011-11-14', NULL)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 980190962, 1, 1, 1, 'MyText', '2011-11-14', NULL)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 'MyText')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 'MyText')[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 1)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 1)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "user_skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+SQLite3::SQLException: table user_skills has no column named project_id: INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "attachments"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "project_skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 298486374, 1, 1, 1, 'MyText', '2011-11-14', NULL)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 980190962, 1, 1, 1, 'MyText', '2011-11-14', NULL)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 'MyText')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 'MyText')
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "user_projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 1)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 1)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "user_skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)[0m
+SQLite3::SQLException: table user_skills has no column named project_id: INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "attachments"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "project_skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 298486374, 1, 1, 1, 'MyText', '2011-11-14', NULL)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 980190962, 1, 1, 1, 'MyText', '2011-11-14', NULL)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 'MyText')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 'MyText')[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 1)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 1)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "user_skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+SQLite3::SQLException: table user_skills has no column named project_id: INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "attachments"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "project_skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 298486374, 1, 1, 1, 'MyText', '2011-11-14', NULL)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 980190962, 1, 1, 1, 'MyText', '2011-11-14', NULL)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 'MyText')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 'MyText')
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "user_projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 1)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 1)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "user_skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)[0m
+SQLite3::SQLException: table user_skills has no column named project_id: INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "attachments"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "project_skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 298486374, 1, 1, 1, 'MyText', '2011-11-14', NULL)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 980190962, 1, 1, 1, 'MyText', '2011-11-14', NULL)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 'MyText')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 'MyText')[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 1)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 1)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "user_skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+SQLite3::SQLException: table user_skills has no column named project_id: INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "attachments"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "project_skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 298486374, 1, 1, 1, 'MyText', '2011-11-14', NULL)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 980190962, 1, 1, 1, 'MyText', '2011-11-14', NULL)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 'MyText')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 'MyText')
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "user_projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 1)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 1)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "user_skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)[0m
+SQLite3::SQLException: table user_skills has no column named project_id: INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "attachments"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "project_skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 298486374, 1, 1, 1, 'MyText', '2011-11-14', NULL)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 980190962, 1, 1, 1, 'MyText', '2011-11-14', NULL)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 'MyText')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 'MyText')[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 1)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 1)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "user_skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+SQLite3::SQLException: table user_skills has no column named project_id: INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "attachments"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "project_skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 298486374, 1, 1, 1, 'MyText', '2011-11-14', NULL)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 980190962, 1, 1, 1, 'MyText', '2011-11-14', NULL)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 'MyText')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 'MyText')
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "user_projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 1)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 1)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "user_skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)[0m
+SQLite3::SQLException: table user_skills has no column named project_id: INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "attachments"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "project_skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 298486374, 1, 1, 1, 'MyText', '2011-11-14', NULL)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 980190962, 1, 1, 1, 'MyText', '2011-11-14', NULL)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 'MyText')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 'MyText')[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 1)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 1)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "user_skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+SQLite3::SQLException: table user_skills has no column named project_id: INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "attachments"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "project_skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 298486374, 1, 1, 1, 'MyText', '2011-11-14', NULL)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 980190962, 1, 1, 1, 'MyText', '2011-11-14', NULL)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 'MyText')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 'MyText')
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "user_projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 1)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 1)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "user_skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)[0m
+SQLite3::SQLException: table user_skills has no column named project_id: INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "attachments"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "project_skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 298486374, 1, 1, 1, 'MyText', '2011-11-14', NULL)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 980190962, 1, 1, 1, 'MyText', '2011-11-14', NULL)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 'MyText')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 'MyText')[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 1)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 1)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "user_skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+SQLite3::SQLException: table user_skills has no column named project_id: INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "attachments"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "project_skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 298486374, 1, 1, 1, 'MyText', '2011-11-14', NULL)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 980190962, 1, 1, 1, 'MyText', '2011-11-14', NULL)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 'MyText')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 'MyText')
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "user_projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 1)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 1)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "user_skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)[0m
+SQLite3::SQLException: table user_skills has no column named project_id: INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "attachments"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "project_skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 298486374, 1, 1, 1, 'MyText', '2011-11-14', NULL)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 980190962, 1, 1, 1, 'MyText', '2011-11-14', NULL)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 'MyText')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 'MyText')[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 1)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 1)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "user_skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+SQLite3::SQLException: table user_skills has no column named project_id: INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "attachments"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "project_skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 298486374, 1, 1, 1, 'MyText', '2011-11-14', NULL)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 980190962, 1, 1, 1, 'MyText', '2011-11-14', NULL)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 'MyText')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 'MyText')
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "user_projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 1)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 1)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "user_skills"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)[0m
+SQLite3::SQLException: table user_skills has no column named project_id: INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "attachments"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "attachments" ("name", "created_at", "updated_at", "project_id", "id") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "project_skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "project_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 298486374, 1, 1, 1, 'MyText', '2011-11-14', NULL)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("photo", "start_date", "name", "created_at", "updated_at", "id", "creator_id", "team_size", "hours_per_week", "description", "end_date", "active") VALUES ('MyString', '2011-11-14', 'MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 980190962, 1, 1, 1, 'MyText', '2011-11-14', NULL)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 'MyText')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "level", "id", "description") VALUES ('MyString', '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 'MyText')[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "user_projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374, 1)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_projects" ("created_at", "updated_at", "project_id", "id", "user_id") VALUES ('2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 980190962, 1)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "user_skills"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
+SQLite3::SQLException: table user_skills has no column named project_id: INSERT INTO "user_skills" ("skill_id", "created_at", "updated_at", "project_id", "id") VALUES (1, '2011-12-15 00:05:29', '2011-12-15 00:05:29', 1, 298486374)
