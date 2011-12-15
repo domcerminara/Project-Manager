@@ -1,4 +1,6 @@
-o: ActiveSupport::Cache::Entry	:@expires_in0:@value{"asset_paths["+$root/app/assets/javascripts/jquery.js"	body"ô•/*!
+o: ActiveSupport::Cache::Entry	:@expires_in0:@value{I"
+class:EFI"BundledAsset;FI"id;F"%523be452611c7885c87f3fa2e4307311I"logical_path;FI"jquery.js:encoding"Windows-1252I"pathname;FI"+$root/app/assets/javascripts/jquery.js;	@I"content_type;FI"application/javascript;FI"
+mtime;FI"2011-12-14T20:20:26-05:00;FI"	body;FI"ô•/*!
  * jQuery JavaScript Library v1.6.1
  * http://jquery.com/
  *
@@ -8935,7 +8937,5 @@ jQuery.each([ "Height", "Width" ], function( i, name ) {
 
 window.jQuery = window.$ = jQuery;
 })(window);
-"content_type"application/javascript"
-class"BundledAsset"
-mtime"2011-12-11T15:00:53-05:00"_version"%46dde6621c301f4928e3b34efee9e3b5"id"%fd2e661073a3251d5a822c6c53a1cfd9"dependency_paths[{"hexdigest"%42ab54c85ab9149f4dd983ae6bc5d62d"
-mtimeu:	Timetí€  P"	path"+$root/app/assets/javascripts/jquery.js"pathname"+$root/app/assets/javascripts/jquery.js"logical_path"jquery.js:@compressedF:@created_atf1323634258.6879539 p
+;FI"asset_paths;F[I"+$root/app/assets/javascripts/jquery.js;	@I"dependency_paths;F[{I"	path;FI"+$root/app/assets/javascripts/jquery.js;	@I"
+mtime;FIu:	Timeáí€   Q:@_zone"Eastern Standard Time:offsetiþ°¹I"hexdigest;F"%ec8228e2c135bb2312e3059d9a9f0acdI"_version;F"%46dde6621c301f4928e3b34efee9e3b5:@compressedF:@created_atf1323912180.640456 ý;

@@ -1,4 +1,6 @@
-o: ActiveSupport::Cache::Entry	:@expires_in0:@value{"asset_paths[".$root/app/assets/javascripts/jquery-ui.js"	body"*¥/*!
+o: ActiveSupport::Cache::Entry	:@expires_in0:@value{I"
+class:EFI"BundledAsset;FI"id;F"%9c2ee6245f42e7b8138ee65219f634c5I"logical_path;FI"jquery-ui.js:encoding"Windows-1252I"pathname;FI".$root/app/assets/javascripts/jquery-ui.js;	@I"content_type;FI"application/javascript;FI"
+mtime;FI"2011-12-14T20:20:26-05:00;FI"	body;FI"*¥/*!
  * jQuery UI 1.8.12
  *
  * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
@@ -11602,7 +11604,5 @@ $.extend( $.ui.tabs.prototype, {
 });
 
 })( jQuery );
-"content_type"application/javascript"
-class"BundledAsset"
-mtime"2011-12-11T15:00:53-05:00"_version"%46dde6621c301f4928e3b34efee9e3b5"id"%d2165e03d315cb5373b28b17a22627b7"dependency_paths[{"hexdigest"%28e4975d774a02bfdd291bea10dd1159"
-mtimeu:	Timetí€  P"	path".$root/app/assets/javascripts/jquery-ui.js"pathname".$root/app/assets/javascripts/jquery-ui.js"logical_path"jquery-ui.js:@compressedF:@created_atf1323634258.7140141 ²h
+;FI"asset_paths;F[I".$root/app/assets/javascripts/jquery-ui.js;	@I"dependency_paths;F[{I"	path;FI".$root/app/assets/javascripts/jquery-ui.js;	@I"
+mtime;FIu:	Timeáí€   Q:@_zone"Eastern Standard Time:offsetiþ°¹I"hexdigest;F"%400aaeff2b5e169c5d59e532a98b9e23I"_version;F"%46dde6621c301f4928e3b34efee9e3b5:@compressedF:@created_atf1323912180.8214669 ’ê

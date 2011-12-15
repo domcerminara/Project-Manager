@@ -1,4 +1,6 @@
-o: ActiveSupport::Cache::Entry	:@expires_in0:@value{"asset_paths["/$root/app/assets/javascripts/jquery_ujs.js"	body"Ô1/**
+o: ActiveSupport::Cache::Entry	:@expires_in0:@value{I"
+class:EFI"BundledAsset;FI"id;F"%91fd4ff482a13c1bffd3979708bcf917I"logical_path;FI"jquery_ujs.js:encoding"Windows-1252I"pathname;FI"/$root/app/assets/javascripts/jquery_ujs.js;	@I"content_type;FI"application/javascript;FI"
+mtime;FI"2011-12-14T20:20:27-05:00;FI"	body;FI"Ô1/**
  * Unobtrusive scripting adapter for jQuery
  *
  * Requires jQuery 1.4.4 or later.
@@ -314,7 +316,5 @@
   });
 
 })( jQuery );
-"content_type"application/javascript"
-class"BundledAsset"
-mtime"2011-12-11T15:00:53-05:00"_version"%46dde6621c301f4928e3b34efee9e3b5"id"%acd0edae922a3b606e26839c19c56065"dependency_paths[{"hexdigest"%a7fd9683645acb3be8c0c30e9e68cf51"
-mtimeu:	Timetí€  P"	path"/$root/app/assets/javascripts/jquery_ujs.js"pathname"/$root/app/assets/javascripts/jquery_ujs.js"logical_path"jquery_ujs.js:@compressedF:@created_atf1323634258.6944101 q7
+;FI"asset_paths;F[I"/$root/app/assets/javascripts/jquery_ujs.js;	@I"dependency_paths;F[{I"	path;FI"/$root/app/assets/javascripts/jquery_ujs.js;	@I"
+mtime;FIu:	Timeáí€  °Q:@_zone"Eastern Standard Time:offsetiþ°¹I"hexdigest;F"%8697c906c8c48de2f8ede52472bfb677I"_version;F"%46dde6621c301f4928e3b34efee9e3b5:@compressedF:@created_atf1323912180.7234612 M0
